@@ -8,7 +8,7 @@
     "lat": 41.718831,
     "lon": 2.933144,
     "any_foto": 1932,
-    "descripcio": "La Villa Vella torre d'en Joanàs, Tossa de Mar.", 
+    "descripcio": "La Villa Vella torre d'en Joanàs, Tossa de Mar.",
     "attributions": [
       {
         "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
@@ -26,7 +26,7 @@
     "lon": 1.926977,
     "any_foto": 1932,
     "descripcio": "Vista del Llac de Puigcerdà.",
-       "attributions": [
+    "attributions": [
       {
         "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas/id/7720/rec/2"
@@ -43,7 +43,7 @@
     "lon": 2.152732,
     "any_foto": 1932,
     "descripcio": "Parc de Montjuïc: fonts lluminoses.",
-     "attributions": [
+    "attributions": [
       {
         "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas/id/1120/rec/1"
@@ -52,7 +52,7 @@
   },
   {
     "id": "4",
-    "level": 1,
+    "level": 2,
     "nom": "Plaça del Dr. Bartomeu Robert Casa de la Ciutat, façana posterior",
     "nom_fitxer": "sabadell_robert.jpg",
     "autor": "Família Cuyàs",
@@ -69,7 +69,7 @@
   },
   {
     "id": "5",
-    "level": 1,
+    "level": 2,
     "nom": "Església de la Mare de Déu de la Salut, Castelldefels",
     "nom_fitxer": "castelldefels_esglesia.jpg",
     "autor": "Família Cuyàs",
@@ -120,7 +120,7 @@
   },
   {
     "id": "8",
-    "level": 1,
+    "level": 3,
     "nom": "Antic santuari de Sant Joan de l'Erm",
     "nom_fitxer": "santjoan_erm.jpg",
     "autor": "Família Cuyàs",
@@ -205,7 +205,7 @@
   },
   {
     "id": "13",
-    "level": 1,
+    "level": 3,
     "nom": "Ruïnes del castell i rellotge de la Casa de la Vila, Gironella",
     "nom_fitxer": "castell_gironella.jpg",
     "autor": "Família Cuyàs",
@@ -222,7 +222,7 @@
   },
   {
     "id": "14",
-    "level": 1,
+    "level": 2,
     "nom": "Pont de pedra: bastit en temps de Carles III i enfonsat el 1972, Molins de Rei",
     "nom_fitxer": "pont_molins.jpg",
     "autor": "Família Cuyàs",
@@ -239,7 +239,7 @@
   },
   {
     "id": "15",
-    "level": 1,
+    "level": 3,
     "nom": "Església romànica de Santa Maria, Barberà del Vallès",
     "nom_fitxer": "stamaria_barbera.jpg",
     "autor": "Família Cuyàs",
@@ -273,7 +273,7 @@
   },
   {
     "id": "17",
-    "level": 1,
+    "level": 2,
     "nom": "Carrer Major, Vilanova de Sau",
     "nom_fitxer": "major_vilanovasau.jpg",
     "autor": "Família Cuyàs",
@@ -290,7 +290,7 @@
   },
   {
     "id": "18",
-    "level": 1,
+    "level": 2,
     "nom": "Plaça de la Victoria, Barcelona",
     "nom_fitxer": "pl_victoria.jpg",
     "autor": "Família Cuyàs",
@@ -324,7 +324,7 @@
   },
   {
     "id": "20",
-    "level": 1,
+    "level": 2,
     "nom": "Plaça i església de Sant Felip Neri, Barcelona",
     "nom_fitxer": "pl_felipneri.jpg",
     "autor": "Família Cuyàs",
@@ -341,7 +341,7 @@
   },
   {
     "id": "21",
-    "level": 1,
+    "level": 2,
     "nom": "Plaça de la Llana, Barcelona",
     "nom_fitxer": "pl_llana.jpg",
     "autor": "Família Cuyàs",
@@ -358,7 +358,7 @@
   },
   {
     "id": "22",
-    "level": 1,
+    "level": 2,
     "nom": "Cala de Sant Francesc, Blanes",
     "nom_fitxer": "cala_stfrancesc.jpg",
     "autor": "Família Cuyàs",
@@ -375,7 +375,7 @@
   },
   {
     "id": "23",
-    "level": 1,
+    "level": 2,
     "nom": "Monument al Timbaler del Bruc, el Bruc",
     "nom_fitxer": "timbaler_bruc.jpg",
     "autor": "Família Cuyàs",
@@ -392,7 +392,7 @@
   },
   {
     "id": "24",
-    "level": 1,
+    "level": 2,
     "nom": "El pont romà, Caldes de Montbui",
     "nom_fitxer": "pontroma_caldes.jpg",
     "autor": "Família Cuyàs",
@@ -426,7 +426,7 @@
   },
   {
     "id": "26",
-    "level": 1,
+    "level": 3,
     "nom": "Pantà de Can Borrell, Sant Cugat del Vallès",
     "nom_fitxer": "panta_canborrell.jpg",
     "autor": "Família Cuyàs",
@@ -443,7 +443,7 @@
   },
   {
     "id": "27",
-    "level": 1,
+    "level": 2,
     "nom": "Castell de Sant Marçal, Cerdanyola del Vallès",
     "nom_fitxer": "castell_santmarcal.jpg",
     "autor": "Família Cuyàs",
@@ -494,7 +494,7 @@
   },
   {
     "id": "30",
-    "level": 1,
+    "level": 3,
     "nom": "Castell d'Eramprunyà, Gavà",
     "nom_fitxer": "castell_eramprunya.jpg",
     "autor": "Família Cuyàs",
@@ -509,13 +509,13 @@
       }
     ]
   },
-    {
+  {
     "id": "31",
     "level": 1,
     "nom": "Tibidabo: vista general, Barcelona",
     "nom_fitxer": "bcn_tibidabo.jpg",
     "autor": "Família Cuyàs",
-    "lat": 41.42215366089349, 
+    "lat": 41.42215366089349,
     "lon": 2.1188662541332364,
     "any_foto": "1905-1980",
     "descripcio": "Tibidabo: vista general, Barcelona",
@@ -526,13 +526,13 @@
       }
     ]
   },
-      {
+  {
     "id": "32",
     "level": 1,
     "nom": "Catedral de Santa Maria, Casa de la Pia Almoina, Girona",
     "nom_fitxer": "girona_almoina.jpg",
     "autor": "Família Cuyàs",
-    "lat": 41.987296327624215, 
+    "lat": 41.987296327624215,
     "lon": 2.825437818827753,
     "any_foto": "1905-1980",
     "descripcio": "Catedral de Santa Maria, Casa de la Pia Almoina, Girona",
@@ -543,9 +543,9 @@
       }
     ]
   },
-    {
+  {
     "id": "33",
-    "level": 3,
+    "level": 2,
     "nom": "Catalunya en miniatura: Catedral de Girona, Torrelles de Llobregat",
     "nom_fitxer": "cat_miniatura2.jpg",
     "autor": "Família Cuyàs",
@@ -560,13 +560,13 @@
       }
     ]
   },
-      {
+  {
     "id": "34",
     "level": 1,
     "nom": "Riu Ter pel seu pas per Ripoll",
     "nom_fitxer": "ripoll_ter.jpg",
     "autor": "Família Cuyàs",
-    "lat": 42.19850171167127, 
+    "lat": 42.19850171167127,
     "lon": 2.191809292482458,
     "any_foto": "1905-1980",
     "descripcio": "Riu Ter pel seu pas per Ripoll",
@@ -577,14 +577,14 @@
       }
     ]
   },
-      {
+  {
     "id": "35",
     "level": 2,
     "nom": "Vista del barri de l'Esglèsia, Vallirana",
     "nom_fitxer": "vallirana.jpg",
     "autor": "Família Cuyàs",
-    "lat": 41.38211969910648, 
-    "lon": 1.929288313251322, 
+    "lat": 41.38211969910648,
+    "lon": 1.929288313251322,
     "any_foto": "1905-1980",
     "descripcio": "Vista del barri de l'Esglèsia, Vallirana",
     "attributions": [
@@ -593,7 +593,8 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ]
-  },      {
+  },
+  {
     "id": "36",
     "level": 2,
     "nom": "Port de la Bonaigua",
@@ -610,16 +611,747 @@
       }
     ]
   },
-   {
+  {
     "id": "37",
     "level": 2,
     "nom": "Riu Freser pel seu pas per Ribes de Freser",
     "nom_fitxer": "ribes_freser.jpg",
     "autor": "Família Cuyàs",
-    "lat": 42.30292277500972, 
+    "lat": 42.30292277500972,
     "lon": 2.1666657128039257,
     "any_foto": "1905-1980",
     "descripcio": "Riu Freser pel seu pas per Ribes de Freser",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "level": 1,
+    "nom": "Plaça del Monestir, Montserrat",
+    "nom_fitxer": "pl_monestir.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.59291305567475,
+    "lon": 1.8367622600522684,
+    "any_foto": 1950,
+    "descripcio": "Plaça del Monestir, Montserrat",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "level": 3,
+    "nom": "Església romànica de Sant Miquel, Olèrdola",
+    "nom_fitxer": "esglesia_sant_miquel.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.302542445027655,
+    "lon": 1.7094032059285758,
+    "any_foto": 1950,
+    "descripcio": "Església romànica de Sant Miquel, Olèrdola",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "level": 3,
+    "nom": "Torre Maians, Vilassar de Dalt",
+    "nom_fitxer": "torre_maians.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.51265900021603,
+    "lon": 2.3626938978809275,
+    "any_foto": 1950,
+    "descripcio": "Torre Maians, Vilassar de Dalt",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "level": 2,
+    "nom": "Edificis Trade, Les Corts, Barcelona",
+    "nom_fitxer": "edificis_trade.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.3861025015374,
+    "lon": 2.1275882282818293,
+    "any_foto": 1950,
+    "descripcio": "Edificis Trade, Les Corts, Barcelona",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "level": 3,
+    "nom": "Estació Maçanet-Massanes, Maçanet de la Selva",
+    "nom_fitxer": "est_massanes.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.77392751660496,
+    "lon": 2.6736723263356654,
+    "any_foto": 1950,
+    "descripcio": "Estació Maçanet-Massanes, Maçanet de la Selva",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "level": 3,
+    "nom": "Ermita de Santa Fe, Organyà",
+    "nom_fitxer": "ermita_santa_fe.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.20875221848346,
+    "lon": 1.301439389859154,
+    "any_foto": 1950,
+    "descripcio": "Ermita de Santa Fe, Organyà",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "level": 2,
+    "nom": "Avinguda del Maresme, Mataró",
+    "nom_fitxer": "avinguda_maresme.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.53886853951843,
+    "lon": 2.4532618238627615,
+    "any_foto": 1950,
+    "descripcio": "Avinguda del Maresme, Mataró",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "level": 2,
+    "nom": "La Platja, Cadaqués",
+    "nom_fitxer": "platja_cadaques.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.28681573237848,
+    "lon": 3.276212915172222,
+    "any_foto": 1950,
+    "descripcio": "La Platja, Cadaqués",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "level": 2,
+    "nom": "Residència marítima, Castelló d'Empúries",
+    "nom_fitxer": "residencia_maritima.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.24881774856425,
+    "lon": 3.129505875772659,
+    "any_foto": 1950,
+    "descripcio": "Residència marítima, Castelló d'Empúries",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "level": 2,
+    "nom": "Pont sobre l'Ebre, Tortosa",
+    "nom_fitxer": "pont_ebre.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 40.813225722672954,
+    "lon": 0.5197477622303814,
+    "any_foto": 1950,
+    "descripcio": "Pont sobre l'Ebre, Tortosa",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "level": 1,
+    "nom": "El Pedraforca i l'Església de Saldes, Saldes",
+    "nom_fitxer": "esglesia_saldes.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.22908604711279,
+    "lon": 1.736213976269493,
+    "any_foto": 1950,
+    "descripcio": "El Pedraforca i l'Església de Saldes, Saldes",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "level": 2,
+    "nom": "Passeig de Bendel, Lleida",
+    "nom_fitxer": "passeig_bendel.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.61318827500456,
+    "lon": 0.6252161363100537,
+    "any_foto": 1950,
+    "descripcio": "Passeig de Bendel, Lleida",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "level": 1,
+    "nom": "Riu Segre davant la Seu Vella, Lleida",
+    "nom_fitxer": "riu_segre_lleida.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.61241757763042,
+    "lon": 0.6267138217693609,
+    "any_foto": 1950,
+    "descripcio": "Riu Segre davant la Seu Vella, Lleida",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "level": 3,
+    "nom": "Vies de ferrocarril i carretera sobre el pantà de Tremp, Salàs de Pallars",
+    "nom_fitxer": "panta_tremp.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.205251667816476,
+    "lon": 0.9354371720135716,
+    "any_foto": 1950,
+    "descripcio": "Vies de ferrocarril i carretera sobre el pantà de Tremp, Salàs de Pallars",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "level": 3,
+    "nom": "Castell de Castellvell, Solsona",
+    "nom_fitxer": "castell_solsona.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.99472989245508,
+    "lon": 1.5031202780376218,
+    "any_foto": 1950,
+    "descripcio": "Castell de Castellvell, Solsona",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "53",
+    "level": 1,
+    "nom": "El llac, Banyoles",
+    "nom_fitxer": "llac_banyoles.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.116617302431614,
+    "lon": 2.755197530124379,
+    "any_foto": 1950,
+    "descripcio": "El llac, Banyoles",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "level": 3,
+    "nom": "Presa del Pasteral, la Cellera de Ter",
+    "nom_fitxer": "pasteral.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.984543090176025,
+    "lon": 2.601701257565588,
+    "any_foto": 1950,
+    "descripcio": "Presa del Pasteral, la Cellera de Ter",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "level": 2,
+    "nom": "El castell, Tona",
+    "nom_fitxer": "castell_tona.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.854847831290755,
+    "lon": 2.2247824634383893,
+    "any_foto": 1950,
+    "descripcio": "El castell, Tona",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "level": 2,
+    "nom": "Sant Miquel del Fai, Bigues i Riells",
+    "nom_fitxer": "st_miquel_fai.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.71507037574947,
+    "lon": 2.1881792413660937,
+    "any_foto": 1950,
+    "descripcio": "Sant Miquel del Fai, Bigues i Riells",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "level": 2,
+    "nom": "La Mola, Sant Llorenç del Munt i l'Obac",
+    "nom_fitxer": "la_mola.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.640927575915484,
+    "lon": 2.0180381413416897,
+    "any_foto": 1950,
+    "descripcio": "La Mola, Sant Llorenç del Munt i l'Obac",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "level": 1,
+    "nom": "Arc de Berà, Roda de Berà",
+    "nom_fitxer": "arc_bera.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.173314953378814,
+    "lon": 1.46915696384949,
+    "any_foto": 1950,
+    "descripcio": "Arc de Berà, Roda de Berà",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "level": 1,
+    "nom": "Forum Romà, Tarragona",
+    "nom_fitxer": "forum_tarragona.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.11453764501709,
+    "lon": 1.248664133396351,
+    "any_foto": 1950,
+    "descripcio": "Forum Romà, Tarragona",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "level": 2,
+    "nom": "Passeig del port, Cambrils",
+    "nom_fitxer": "port_cambrils.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.06502313823271,
+    "lon": 1.0597777179168946,
+    "any_foto": 1956,
+    "descripcio": "Passeig del port, Cambrils",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "level": 2,
+    "nom": "Casa de la Ciutat, La Ràpita",
+    "nom_fitxer": "ajuntament_rapita.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 40.62022032975219,
+    "lon": 0.5926738000206293,
+    "any_foto": 1956,
+    "descripcio": "Casa de la Ciutat, La Ràpita",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "level": 1,
+    "nom": "Riu Ebre a Miravet (Ribera d'Ebre)",
+    "nom_fitxer": "miravet.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.03684241489742,
+    "lon": 0.5980101813055876,
+    "any_foto": 1956,
+    "descripcio": "Riu Ebre a Miravet (Ribera d'Ebre)",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "level": 2,
+    "nom": "Pont sobre l'Ebre, Amposta",
+    "nom_fitxer": "pont_amposta.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 40.714899705446946,
+    "lon": 0.581705486532692,
+    "any_foto": 1956,
+    "descripcio": "Pont sobre l'Ebre, Amposta",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "level": 2,
+    "nom": "Casino Hotel Colón, Cades d'Estrac",
+    "nom_fitxer": "casino_colon.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.56773072143975,
+    "lon": 2.5266963354838303,
+    "any_foto": 1956,
+    "descripcio": "Casino Hotel Colón, Cades d'Estrac",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "level": 2,
+    "nom": "Façana marítima, Sant Pol de Mar",
+    "nom_fitxer": "sant_pol.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.60260375208013,
+    "lon": 2.626664196604444,
+    "any_foto": 1956,
+    "descripcio": "Façana marítima, Sant Pol de Mar",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "level": 2,
+    "nom": "Vista general des del Castell, Hostalric",
+    "nom_fitxer": "hostalric.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.7446575360301,
+    "lon": 2.6336239133682513,
+    "any_foto": 1956,
+    "descripcio": "Vista general des del Castell, Hostalric",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "level": 2,
+    "nom": "Turó de l'Home, Montseny (Fogars de Montclús)",
+    "nom_fitxer": "turo_home.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.77685519237245,
+    "lon": 2.4347104346076063,
+    "any_foto": 1956,
+    "descripcio": "Turó de l'Home, Montseny (Fogars de Montclús)",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "level": 1,
+    "nom": "Columnes de basalt, Castellfollit de la Roca",
+    "nom_fitxer": "castellfollit_roca.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.2195098529336,
+    "lon": 2.5558539508414784,
+    "any_foto": 1956,
+    "descripcio": "Columnes de basalt des del Fluvià, Castellfollit de la Roca",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "level": 1,
+    "nom": "El Pont Medieval, Besalú",
+    "nom_fitxer": "pont_besalu.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.19934263972436,
+    "lon": 2.701204145449787,
+    "any_foto": 1956,
+    "descripcio": "El Pont Medieval, Besalú",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "level": 3,
+    "nom": "La Torre de les Hores, Peratallada",
+    "nom_fitxer": "peratallada.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.97789938276254,
+    "lon": 3.089320111569837,
+    "any_foto": 1956,
+    "descripcio": "La Torre de les Hores, Peratallada",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "level": 1,
+    "nom": "Estació Internacional, Portbou",
+    "nom_fitxer": "portbou.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.4247964444707,
+    "lon": 3.157723975683241,
+    "any_foto": 1956,
+    "descripcio": "Estació Internacional, Portbou",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "level": 1,
+    "nom": "El pont del riu Ter, Camprodon",
+    "nom_fitxer": "camprodon.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.312615184053385,
+    "lon": 2.3647748748971327,
+    "any_foto": 1956,
+    "descripcio": "El pont del riu Ter, Camprodon",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "level": 1,
+    "nom": "L'estació vella, FC. Nord, La Molina (Alp)",
+    "nom_fitxer": "la_molina.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.344587911652134,
+    "lon": 1.955920459175303,
+    "any_foto": 1956,
+    "descripcio": "L'estació vella, FC. Nord, La Molina (Alp)",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "level": 2,
+    "nom": "Castell: Església de Sant Vicenç, Cardona",
+    "nom_fitxer": "cardona.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.914375015138596,
+    "lon": 1.6853453681292037,
+    "any_foto": 1956,
+    "descripcio": "Castell: Església de Sant Vicenç, Cardona",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "level": 2,
+    "nom": "Castell: Església de Sant Vicenç, Cardona",
+    "nom_fitxer": "cardona.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.914375015138596,
+    "lon": 1.6853453681292037,
+    "any_foto": 1956,
+    "descripcio": "Castell: Església de Sant Vicenç, Cardona",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "level": 2,
+    "nom": "Volcà i ermita de Santa Margarida, Santa Pau",
+    "nom_fitxer": "santa_pau.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.141647430041516,
+    "lon": 2.5413989955544567,
+    "any_foto": 1956,
+    "descripcio": "Volcà i ermita de Santa Margarida, Santa Pau",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "level": 2,
+    "nom": "Casa de la Ciutat, Manresa",
+    "nom_fitxer": "ajuntament_manresa.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.723163967181975,
+    "lon": 1.8269551606519963,
+    "any_foto": 1956,
+    "descripcio": "Casa de la Ciutat, Manresa",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "level": 3,
+    "nom": "Antiga estació dels FFCC, Igualada",
+    "nom_fitxer": "estacio_igualada.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.582844143390794,
+    "lon": 1.6152621581598696,
+    "any_foto": 1956,
+    "descripcio": "Antiga estació dels FFCC, Igualada",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "level": 3,
+    "nom": "Portal de Bover, Montblanc",
+    "nom_fitxer": "portal_bover.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.376598993989866,
+    "lon": 1.1639350114525049,
+    "any_foto": 1956,
+    "descripcio": "Portal de Bover, Montblanc",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "level": 3,
+    "nom": "Santuari de Queralt, Berga",
+    "nom_fitxer": "santuari_queralt.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.1076835357528,
+    "lon": 1.8274656690557907,
+    "any_foto": 1956,
+    "descripcio": "Santuari de Queralt, Berga",
     "attributions": [
       {
         "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
