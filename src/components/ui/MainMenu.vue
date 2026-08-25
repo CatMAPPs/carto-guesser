@@ -11,9 +11,9 @@
         <p class="menu-tagline">Endevina on va ser feta la foto</p>
       </div>
 
-      <!-- Mode buttons -->
+      <!-- Daily challenge -->
       <nav class="menu-modes">
-        <button class="mode-button group animate-slide-up stagger-2" @click="emit('modeSelect', 'daily')">
+        <button class="mode-button group animate-slide-up stagger-2" @click="emit('modeSelect')">
           <div class="mode-icon">🏆</div>
           <div class="mode-body">
             <div class="mode-title">Repte Diari</div>
@@ -22,13 +22,18 @@
           <span class="mode-arrow" aria-hidden="true">→</span>
         </button>
 
-        <button class="mode-button group animate-slide-up stagger-3" @click="emit('modeSelect', 'freeplay')">
+        <button
+          class="mode-button mode-button-disabled group animate-slide-up stagger-3"
+          type="button"
+          disabled
+          aria-label="Joc Lliure, properament disponible"
+        >
           <div class="mode-icon">🎯</div>
           <div class="mode-body">
             <div class="mode-title">Joc Lliure</div>
-            <div class="mode-desc">Pràctica il·limitada · Sense pressió</div>
+            <div class="mode-desc">Properament disponible</div>
           </div>
-          <span class="mode-arrow" aria-hidden="true">→</span>
+          <span class="mode-status">Properament</span>
         </button>
       </nav>
 
@@ -46,7 +51,7 @@
 
 <script setup lang="ts">
 const emit = defineEmits<{
-  modeSelect: [mode: 'daily' | 'freeplay']
+  modeSelect: []
 }>()
 </script>
 
@@ -113,6 +118,15 @@ const emit = defineEmits<{
   @apply translate-y-0;
 }
 
+.mode-button-disabled {
+  @apply cursor-not-allowed opacity-45;
+}
+
+.mode-button-disabled:hover {
+  @apply border-noir-gold/10 bg-noir-surface/50 translate-y-0;
+  box-shadow: none;
+}
+
 .mode-icon {
   @apply text-2xl w-11 h-11 flex items-center justify-center rounded-xl flex-shrink-0;
   background: rgba(203,161,53,0.07);
@@ -133,6 +147,10 @@ const emit = defineEmits<{
 
 .mode-arrow {
   @apply text-noir-gold/30 text-base flex-shrink-0 transition-all duration-300;
+}
+
+.mode-status {
+  @apply text-[0.65rem] uppercase tracking-wider text-noir-gold/50 flex-shrink-0;
 }
 
 .group:hover .mode-arrow {

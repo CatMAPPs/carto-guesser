@@ -3,7 +3,7 @@ import type { Figure } from './figure'
 /**
  * Game modes
  */
-export type GameMode = 'free_play' | 'daily_challenge'
+export type GameMode = 'daily_challenge'
 
 /**
  * Round phase states

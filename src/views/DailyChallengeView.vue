@@ -11,6 +11,7 @@ import type { Figure } from '@/types/figure'
 import type { RoundScore } from '@/types/score'
 
 const router = useRouter()
+const DAILY_ROUNDS = 3
 
 const gameplayRef = ref<InstanceType<typeof GameplayView> | null>(null)
 
@@ -24,7 +25,7 @@ const finalResults = ref<{ totalScore: number; componentScores: { spatial: numbe
 const today = computed(() => new Date().toISOString().split('T')[0])
 const dailyKey = computed(() => `carto_daily_${today.value}`)
 
-const isLastRound = computed(() => currentRoundNumber.value >= 10)
+const isLastRound = computed(() => currentRoundNumber.value >= DAILY_ROUNDS)
 
 const loadChallenge = async () => {
   try {
@@ -159,7 +160,7 @@ onMounted(() => {
       ref="gameplayRef"
       :current-figure="currentFigure"
       :current-round="currentRoundNumber"
-      :total-rounds="10"
+      :total-rounds="DAILY_ROUNDS"
       :show-timer="true"
       :timer-duration="45"
       :auto-advance="false"
@@ -173,7 +174,7 @@ onMounted(() => {
       <ResultsScreen
         :total-score="finalResults.totalScore"
         :component-scores="finalResults.componentScores"
-        :total-rounds="10"
+        :total-rounds="DAILY_ROUNDS"
         :show-play-again="false"
         :show-leaderboard="false"
         @back-to-menu="goToMenu"

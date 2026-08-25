@@ -8,11 +8,6 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/HomeView.vue'),
   },
   {
-    path: '/play/free',
-    name: 'free-play',
-    component: () => import('@/views/FreePlayView.vue'),
-  },
-  {
     path: '/play/daily',
     name: 'daily-challenge',
     component: () => import('@/views/DailyChallengeView.vue'),

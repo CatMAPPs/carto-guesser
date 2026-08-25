@@ -11,30 +11,6 @@ async function loadFigures(): Promise<Figure[]> {
 }
 
 /**
- * Seeded shuffle using mulberry32 PRNG.
- * The same seed always produces the same order.
- */
-function seededShuffle<T>(arr: T[], seed: string): T[] {
-  // Hash the seed string into a 32-bit integer
-  let s = [...seed].reduce((a, c) => (Math.imul(31, a) + c.charCodeAt(0)) | 0, 0)
-
-  const rand = () => {
-    s |= 0
-    s = (s + 0x6d2b79f5) | 0
-    let t = Math.imul(s ^ (s >>> 15), 1 | s)
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
-  }
-
-  const result = [...arr]
-  for (let i = result.length - 1; i > 0; i--) {
-    const j = Math.floor(rand() * (i + 1))
-    ;[result[i], result[j]] = [result[j], result[i]]
-  }
-  return result
-}
-
-/**
  * Fetch random figures for Free Play mode.
  */
 export async function getRandomFigures(count: number = 10): Promise<Figure[]> {
@@ -45,12 +21,18 @@ export async function getRandomFigures(count: number = 10): Promise<Figure[]> {
 }
 
 /**
- * Fetch figures for Daily Challenge.
- * Uses a date-seeded deterministic shuffle so all players see the same figures.
+ * Fetch the daily figures by ID block: day 1 gets IDs 1-3, day 2 gets 4-6,
+ * and so on. The sequence restarts after all available figures are shown.
  */
 export async function getDailyChallengeFigures(date: string): Promise<Figure[]> {
   const all = await loadFigures()
   if (all.length === 0) throw new Error('No figures available in figures.json')
-  const shuffled = seededShuffle(all, date)
-  return shuffled.slice(0, Math.min(10, shuffled.length))
+  const ordered = [...all].sort((first, second) => Number(first.id) - Number(second.id))
+  const photosPerDay = 3
+  const daysPerCycle = Math.ceil(ordered.length / photosPerDay)
+  const dayOfMonth = Number(date.slice(8, 10))
+  const cycleDay = (dayOfMonth - 1) % daysPerCycle
+  const startIndex = cycleDay * photosPerDay
+
+  return ordered.slice(startIndex, startIndex + photosPerDay)
 }

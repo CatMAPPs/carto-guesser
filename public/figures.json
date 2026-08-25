@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "level": 1,
     "nom": "La Villa Vella torre d'en Joanàs, Tossa de Mar.",
     "nom_fitxer": "tossa_torre.jpg",
     "autor": "Família Cuyàs",
@@ -17,6 +18,7 @@
   },
   {
     "id": "2",
+    "level": 1,
     "nom": "Llac de Puigcerdà",
     "nom_fitxer": "puigcerda_llac.jpg",
     "autor": "Autor desconegut",
@@ -33,6 +35,7 @@
   },
   {
     "id": "3",
+    "level": 1,
     "nom": "Parc de Montjuïc: fonts lluminoses",
     "nom_fitxer": "bcn_montjuic.jpg",
     "autor": "Família Cuyàs",
@@ -49,6 +52,7 @@
   },
   {
     "id": "4",
+    "level": 1,
     "nom": "Plaça del Dr. Bartomeu Robert Casa de la Ciutat, façana posterior",
     "nom_fitxer": "sabadell_robert.jpg",
     "autor": "Família Cuyàs",
@@ -65,6 +69,7 @@
   },
   {
     "id": "5",
+    "level": 1,
     "nom": "Església de la Mare de Déu de la Salut, Castelldefels",
     "nom_fitxer": "castelldefels_esglesia.jpg",
     "autor": "Família Cuyàs",
@@ -81,6 +86,7 @@
   },
   {
     "id": "6",
+    "level": 1,
     "nom": "Casa de les Punxes, obra de Puig i Cadafalch, Barcelona",
     "nom_fitxer": "bcn_punxes.jpg",
     "autor": "Família Cuyàs",
@@ -97,6 +103,7 @@
   },
   {
     "id": "7",
+    "level": 1,
     "nom": "Plaça d'Espanya: plaça de Braus Les Arenes, any 1910, Barcelona",
     "nom_fitxer": "pl_espanya.jpg",
     "autor": "Família Cuyàs",
@@ -113,6 +120,7 @@
   },
   {
     "id": "8",
+    "level": 1,
     "nom": "Antic santuari de Sant Joan de l'Erm",
     "nom_fitxer": "santjoan_erm.jpg",
     "autor": "Família Cuyàs",
@@ -129,6 +137,7 @@
   },
   {
     "id": "9",
+    "level": 1,
     "nom": "Gran Via amb Rambla Catalunya, Barcelona",
     "nom_fitxer": "rambla_granvia.jpg",
     "autor": "Família Cuyàs",
@@ -145,6 +154,7 @@
   },
   {
     "id": "10",
+    "level": 1,
     "nom": "La Plaça Reial, Barcelona",
     "nom_fitxer": "pl_reial.jpg",
     "autor": "Família Cuyàs",
@@ -161,6 +171,7 @@
   },
   {
     "id": "11",
+    "level": 1,
     "nom": "Catalunya en miniatura: Catedral de Tarragona, Torrelles de Llobregat",
     "nom_fitxer": "cat_miniatura.jpg",
     "autor": "Família Cuyàs",
@@ -177,6 +188,7 @@
   },
   {
     "id": "12",
+    "level": 1,
     "nom": "Gràcia: Parc Güell. Obra de Gaudí, detall de l'escalinata, Barcelona",
     "nom_fitxer": "park_guell.jpg",
     "autor": "Família Cuyàs",
@@ -193,6 +205,7 @@
   },
   {
     "id": "13",
+    "level": 1,
     "nom": "Ruïnes del castell i rellotge de la Casa de la Vila, Gironella",
     "nom_fitxer": "castell_gironella.jpg",
     "autor": "Família Cuyàs",
@@ -209,6 +222,7 @@
   },
   {
     "id": "14",
+    "level": 1,
     "nom": "Pont de pedra: bastit en temps de Carles III i enfonsat el 1972, Molins de Rei",
     "nom_fitxer": "pont_molins.jpg",
     "autor": "Família Cuyàs",
@@ -225,6 +239,7 @@
   },
   {
     "id": "15",
+    "level": 1,
     "nom": "Església romànica de Santa Maria, Barberà del Vallès",
     "nom_fitxer": "stamaria_barbera.jpg",
     "autor": "Família Cuyàs",
@@ -241,6 +256,7 @@
   },
   {
     "id": "16",
+    "level": 1,
     "nom": "Plaça de la Universitat, Barcelona",
     "nom_fitxer": "pl_universitat.jpg",
     "autor": "Família Cuyàs",
@@ -257,6 +273,7 @@
   },
   {
     "id": "17",
+    "level": 1,
     "nom": "Carrer Major, Vilanova de Sau",
     "nom_fitxer": "major_vilanovasau.jpg",
     "autor": "Família Cuyàs",
@@ -273,6 +290,7 @@
   },
   {
     "id": "18",
+    "level": 1,
     "nom": "Plaça de la Victoria, Barcelona",
     "nom_fitxer": "pl_victoria.jpg",
     "autor": "Família Cuyàs",
@@ -289,6 +307,7 @@
   },
   {
     "id": "19",
+    "level": 1,
     "nom": "Plaça del Mercadal, Vic",
     "nom_fitxer": "pl_mercadal.jpg",
     "autor": "Família Cuyàs",
@@ -305,6 +324,7 @@
   },
   {
     "id": "20",
+    "level": 1,
     "nom": "Plaça i església de Sant Felip Neri, Barcelona",
     "nom_fitxer": "pl_felipneri.jpg",
     "autor": "Família Cuyàs",
@@ -321,6 +341,7 @@
   },
   {
     "id": "21",
+    "level": 1,
     "nom": "Plaça de la Llana, Barcelona",
     "nom_fitxer": "pl_llana.jpg",
     "autor": "Família Cuyàs",
@@ -337,6 +358,7 @@
   },
   {
     "id": "22",
+    "level": 1,
     "nom": "Cala de Sant Francesc, Blanes",
     "nom_fitxer": "cala_stfrancesc.jpg",
     "autor": "Família Cuyàs",
@@ -353,6 +375,7 @@
   },
   {
     "id": "23",
+    "level": 1,
     "nom": "Monument al Timbaler del Bruc, el Bruc",
     "nom_fitxer": "timbaler_bruc.jpg",
     "autor": "Família Cuyàs",
@@ -369,6 +392,7 @@
   },
   {
     "id": "24",
+    "level": 1,
     "nom": "El pont romà, Caldes de Montbui",
     "nom_fitxer": "pontroma_caldes.jpg",
     "autor": "Família Cuyàs",
@@ -385,6 +409,7 @@
   },
   {
     "id": "25",
+    "level": 1,
     "nom": "Vista parcial, Cervera",
     "nom_fitxer": "vista_cervera.jpg",
     "autor": "Família Cuyàs",
@@ -401,6 +426,7 @@
   },
   {
     "id": "26",
+    "level": 1,
     "nom": "Pantà de Can Borrell, Sant Cugat del Vallès",
     "nom_fitxer": "panta_canborrell.jpg",
     "autor": "Família Cuyàs",
@@ -417,6 +443,7 @@
   },
   {
     "id": "27",
+    "level": 1,
     "nom": "Castell de Sant Marçal, Cerdanyola del Vallès",
     "nom_fitxer": "castell_santmarcal.jpg",
     "autor": "Família Cuyàs",
@@ -433,6 +460,7 @@
   },
   {
     "id": "28",
+    "level": 1,
     "nom": "Vista del port des de Miramar, Barcelona",
     "nom_fitxer": "vista_miramar.jpg",
     "autor": "Família Cuyàs",
@@ -449,6 +477,7 @@
   },
   {
     "id": "29",
+    "level": 1,
     "nom": "Castell de Montjuïc, Barcelona",
     "nom_fitxer": "castell_montjuic.jpg",
     "autor": "Família Cuyàs",
@@ -465,6 +494,7 @@
   },
   {
     "id": "30",
+    "level": 1,
     "nom": "Castell d'Eramprunyà, Gavà",
     "nom_fitxer": "castell_eramprunya.jpg",
     "autor": "Família Cuyàs",

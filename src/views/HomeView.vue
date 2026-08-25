@@ -4,10 +4,7 @@ import { MainMenu } from '@/components/ui'
 
 const router = useRouter()
 
-const handleModeSelect = (mode: 'daily' | 'freeplay') => {
-  if (mode === 'daily') router.push({ name: 'daily-challenge' })
-  else router.push({ name: 'free-play' })
-}
+const handleModeSelect = () => router.push({ name: 'daily-challenge' })
 </script>
 
 <template>

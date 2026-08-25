@@ -4,8 +4,7 @@ Joc de geografia basat en fotografies històriques de Catalunya. L'usuari ha d'i
 
 ## Modes de joc
 
-- **Repte Diari** — 10 fotografies fixes per dia, iguals per a tothom. El resultat es desa localment.
-- **Joc Lliure** — Pràctica sense límit, ordre aleatori.
+- **Repte Diari** — 3 fotografies fixes per dia, iguals per a tothom. El resultat es desa localment. Les fotos segueixen l'ordre dels `id` i es reinicien després de l'11è dia.
 
 ## Stack tecnològic
 
@@ -136,15 +135,17 @@ Per fer el joc més generós, **redueix** el multiplicador. Per fer-lo més estr
 
 ---
 
-### Nombre de rondes per partida
+### Nombre de rondes del repte diari
 
-**Fitxer:** `src/views/FreePlayView.vue` i `src/views/DailyChallengeView.vue`
+**Fitxer:** `src/views/DailyChallengeView.vue`
 
-Busca la prop `total-rounds` al component `<GameplayView>`:
+Canvia la constant `DAILY_ROUNDS` per ajustar el nombre de fotografies:
 
 ```html
-<GameplayView :total-rounds="5" ... />
+const DAILY_ROUNDS = 3
 ```
+
+Les fotografies diàries es determinen pel dia del mes: el dia 1 mostra els `id` 1–3, el dia 2 els `id` 4–6, i així successivament. Amb 33 fotografies i 3 per dia, el cicle es reinicia el dia 12.
 
 ---
 
