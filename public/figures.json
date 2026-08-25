@@ -508,5 +508,123 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ]
+  },
+    {
+    "id": "31",
+    "level": 1,
+    "nom": "Tibidabo: vista general, Barcelona",
+    "nom_fitxer": "bcn_tibidabo.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.42215366089349, 
+    "lon": 2.1188662541332364,
+    "any_foto": "1905-1980",
+    "descripcio": "Tibidabo: vista general, Barcelona",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+      {
+    "id": "32",
+    "level": 1,
+    "nom": "Catedral de Santa Maria, Casa de la Pia Almoina, Girona",
+    "nom_fitxer": "girona_almoina.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.987296327624215, 
+    "lon": 2.825437818827753,
+    "any_foto": "1905-1980",
+    "descripcio": "Catedral de Santa Maria, Casa de la Pia Almoina, Girona",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+    {
+    "id": "33",
+    "level": 3,
+    "nom": "Catalunya en miniatura: Catedral de Girona, Torrelles de Llobregat",
+    "nom_fitxer": "cat_miniatura2.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.3583927,
+    "lon": 1.985388956,
+    "any_foto": "1905-1980",
+    "descripcio": "Catalunya en miniatura: Catedral de Girona, Torrelles de Llobregat",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+      {
+    "id": "34",
+    "level": 1,
+    "nom": "Riu Ter pel seu pas per Ripoll",
+    "nom_fitxer": "ripoll_ter.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.19850171167127, 
+    "lon": 2.191809292482458,
+    "any_foto": "1905-1980",
+    "descripcio": "Riu Ter pel seu pas per Ripoll",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+      {
+    "id": "35",
+    "level": 2,
+    "nom": "Vista del barri de l'Esglèsia, Vallirana",
+    "nom_fitxer": "vallirana.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.38211969910648, 
+    "lon": 1.929288313251322, 
+    "any_foto": "1905-1980",
+    "descripcio": "Vista del barri de l'Esglèsia, Vallirana",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },      {
+    "id": "36",
+    "level": 2,
+    "nom": "Port de la Bonaigua",
+    "nom_fitxer": "port_bonaigua.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.66396336861228,
+    "lon": 0.9794436130003559,
+    "any_foto": "1905-1980",
+    "descripcio": "Port de la Bonaigua",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+   {
+    "id": "37",
+    "level": 2,
+    "nom": "Riu Freser pel seu pas per Ribes de Freser",
+    "nom_fitxer": "ribes_freser.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.30292277500972, 
+    "lon": 2.1666657128039257,
+    "any_foto": "1905-1980",
+    "descripcio": "Riu Freser pel seu pas per Ribes de Freser",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
   }
 ]
