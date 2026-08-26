@@ -3,26 +3,26 @@
     <Card class="results-card">
       <!-- Header -->
       <div class="results-header">
-        <h1 class="results-title">Game Complete!</h1>
+        <h1 class="results-title">Joc completat!</h1>
         <div class="final-score">
           <span class="score-value">{{ totalScore }}</span>
           <span class="score-max">/ {{ maxScore }}</span>
         </div>
         <div class="score-percentage">
-          {{ scorePercentage }}% Accuracy
+          {{ scorePercentage }}% Precisió
         </div>
       </div>
 
       <!-- Component breakdown -->
       <div class="breakdown-section">
-        <h2 class="breakdown-title">Score Breakdown</h2>
+        <h2 class="breakdown-title">Desglossament de la puntuació</h2>
         
         <div class="breakdown-grid">
           <!-- Location -->
           <div class="breakdown-item">
             <div class="breakdown-icon">📍</div>
             <div class="breakdown-content">
-              <div class="breakdown-label">Location Accuracy</div>
+              <div class="breakdown-label">Precisió geogràfica</div>
               <div class="breakdown-score">
                 {{ componentScores.spatial }} <span class="text-noir-text/60">/ {{ maxComponentScore }}</span>
               </div>
@@ -36,7 +36,7 @@
           </div>
 
           <!-- Timeline -->
-          <div class="breakdown-item">
+         <!--  <div class="breakdown-item">
             <div class="breakdown-icon">📅</div>
             <div class="breakdown-content">
               <div class="breakdown-label">Timeline Accuracy</div>
@@ -50,10 +50,10 @@
                 ></div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Name -->
-          <div class="breakdown-item">
+          <!-- <div class="breakdown-item">
             <div class="breakdown-icon">👤</div>
             <div class="breakdown-content">
               <div class="breakdown-label">Name Accuracy</div>
@@ -67,13 +67,13 @@
                 ></div>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Speed (if applicable) -->
           <div v-if="componentScores.speed > 0" class="breakdown-item">
             <div class="breakdown-icon">⚡</div>
             <div class="breakdown-content">
-              <div class="breakdown-label">Speed Bonus</div>
+              <div class="breakdown-label">Bonus de Velocitat</div>
               <div class="breakdown-score">
                 {{ componentScores.speed }} <span class="text-noir-text/60">/ {{ maxSpeedScore }}</span>
               </div>
@@ -91,12 +91,12 @@
       <!-- Additional stats (if provided) -->
       <div v-if="showStats" class="stats-section">
         <div v-if="globalRank" class="stat-item">
-          <span class="stat-label">Global Rank</span>
+          <span class="stat-label">Rang Global</span>
           <span class="stat-value">#{{ globalRank }}</span>
         </div>
         <div v-if="streak" class="stat-item">
-          <span class="stat-label">Streak</span>
-          <span class="stat-value">🔥 {{ streak }} days</span>
+          <span class="stat-label">Ratxa</span>
+          <span class="stat-value">🔥 {{ streak }} dies</span>
         </div>
       </div>
 
@@ -109,7 +109,7 @@
           full-width
           @click="handlePlayAgain"
         >
-          Play Again
+          Jugar de Nou
         </Button>
         <Button
           v-if="showLeaderboard"
@@ -126,7 +126,7 @@
           full-width
           @click="handleBackToMenu"
         >
-          Back to Menu
+          Tornar a l'inici
         </Button>
       </div>
 
@@ -194,7 +194,7 @@ const emit = defineEmits<{
   signup: [];
 }>();
 
-const maxScore = computed(() => props.totalRounds * 2500);
+const maxScore = computed(() => props.totalRounds * 900);
 const maxComponentScore = computed(() => props.totalRounds * 800);
 const maxSpeedScore = computed(() => props.totalRounds * 100);
 

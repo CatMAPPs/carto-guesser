@@ -1359,13 +1359,13 @@
       }
     ]
   },
-    {
+  {
     "id": "81",
     "level": 2,
     "nom": "Ermita de la Pertusa, Àger",
     "nom_fitxer": "pertu_montsec.jpg",
     "autor": "Jordi Mir i Parache",
-    "lat": 42.044083195214064, 
+    "lat": 42.044083195214064,
     "lon": 0.6726186926792628,
     "any_foto": 1985,
     "descripcio": "Santuari de Queralt, Berga",
@@ -1376,13 +1376,13 @@
       }
     ]
   },
-      {
-    "id": "81",
+  {
+    "id": "82",
     "level": 2,
     "nom": "Presa de Flix",
     "nom_fitxer": "presa_flix.jpg",
     "autor": "FUERZAS ELÉCTRICAS DE CATALUÑA, S.A (FECSA)",
-    "lat": 41.23286894581361,  
+    "lat": 41.23286894581361,
     "lon": 0.5473108911966293,
     "any_foto": 1948,
     "descripcio": "Estat de les obres de construcció de la presa de Flix",
@@ -1393,14 +1393,14 @@
       }
     ]
   },
-      {
-    "id": "82",
+  {
+    "id": "83",
     "level": 2,
     "nom": "Estació de Les Planes",
     "nom_fitxer": "les_planes.jpg",
     "autor": "FERROCARRILS DE LA GENERALITAT DE CATALUNYA (FGC)",
-    "lat": 41.42744081660604,  
-    "lon": 2.091676436934488, 
+    "lat": 41.42744081660604,
+    "lon": 2.091676436934488,
     "any_foto": "1890-1910",
     "descripcio": "Estació de Les Planes",
     "attributions": [
@@ -1410,14 +1410,14 @@
       }
     ]
   },
-      {
-    "id": "83",
+  {
+    "id": "84",
     "level": 2,
     "nom": "Pas del riu Segre a Balaguer",
     "nom_fitxer": "balaguer_segre.jpg",
     "autor": "JOSEP PUIG I CADAFALCH",
-    "lat": 41.42744081660604,  
-    "lon": 2.091676436934488, 
+    "lat": 41.42744081660604,
+    "lon": 2.091676436934488,
     "any_foto": "1890-1920",
     "descripcio": "Pas del riu Segre a Balaguer",
     "attributions": [
@@ -1427,13 +1427,13 @@
       }
     ]
   },
-      {
-    "id": "84",
+  {
+    "id": "85",
     "level": 1,
     "nom": "Santuari de la Mare de Déu de Núria",
     "nom_fitxer": "nuria.jpg",
     "autor": "FERROCARRILS DE LA GENERALITAT DE CATALUNYA (FGC)",
-    "lat": 42.39719523139297, 
+    "lat": 42.39719523139297,
     "lon": 2.1535842630667963,
     "any_foto": "1910",
     "descripcio": "Santuari de la Mare de Déu de Núria",
@@ -1441,6 +1441,108 @@
       {
         "name": "FERROCARRILS DE LA GENERALITAT DE CATALUNYA (FGC), Arxiu Nacional de Catalunya ",
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-757-N-2498"
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "level": 2,
+    "nom": "Central nuclear de Vandellòs 1, Vandellòs",
+    "nom_fitxer": "vandellos.jpg",
+    "autor": "TAF HELICÒPTERS, SA",
+    "lat": 40.955947281307836,
+    "lon": 0.8785781346739735,
+    "any_foto": 1968,
+    "descripcio": "Construcció de la central nuclear de Vandellòs, Vandellòs",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "level": 3,
+    "nom": "Monestir de Santes Creus, Aiguamúrcia ",
+    "nom_fitxer": "santes_creus.jpg",
+    "autor": "Francesc Brunet i Recasens, Arxiu Nacional de Catalunya",
+    "lat": 41.346482448711456,
+    "lon": 1.3643333160455335,
+    "any_foto": 1896,
+    "descripcio": "Absis del Reial Monestir de Santa Maria de Santes Creus",
+    "attributions": [
+      {
+        "name": "Francesc Brunet i Recasens, Arxiu Nacional de Catalunya",
+        "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-284-N-127"
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "level": 2,
+    "nom": "Monestir de Poblet, Vimbodí",
+    "nom_fitxer": "poblet.jpg",
+    "autor": "Francesc Brunet i Recasens, Arxiu Nacional de Catalunya",
+    "lat": 41.38047637287508,
+    "lon": 1.0829948377981025,
+    "any_foto": 1897,
+    "descripcio": "Vista frontal de la façana barroca de l'església del monestir de Santa Maria de Poblet vista des de la porta Daurada",
+    "attributions": [
+      {
+        "name": "Francesc Brunet i Recasens, Arxiu Nacional de Catalunya",
+        "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-284-N-157"
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "level": 2,
+    "nom": "Palau dels Comtes, Peralada",
+    "nom_fitxer": "peralada.jpg",
+    "autor": "Josep Maria Cañellas (Àlbums Rubaudonaudeu), Arxiu Nacional de Catalunya",
+    "lat": 42.30767553934238,
+    "lon": 3.010963689949803,
+    "any_foto": 1899,
+    "descripcio": "Panoràmica de la façana del palau de Peralada.",
+    "attributions": [
+      {
+        "name": "Josep Maria Cañellas (Àlbums Rubaudonaudeu), Arxiu Nacional de Catalunya",
+        "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC2-127-N-325"
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "level": 2,
+    "nom": "Serra del Cadí des de El Quer Foradat, Cava",
+    "nom_fitxer": "cadi.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 42.32435972057915,
+    "lon": 1.635766121870551,
+    "any_foto": 1950,
+    "descripcio": "Vista parcial de la Serra del Cadí des de El Quer Foradat, Cava.",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas/id/7257/rec/5"
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "level": 3,
+    "nom": "Església de Santa Maria de Siurana, Siurana de Prades",
+    "nom_fitxer": "siurana.jpg",
+    "autor": "Família Cuyàs",
+    "lat": 41.2577683947287,
+    "lon": 0.9323199629798657,
+    "any_foto": 1950,
+    "descripcio": "Església Parròquial de Santa Maria de Siurana, Siurana de Prades.",
+    "attributions": [
+      {
+        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
+        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas/id/9642/rec/11"
       }
     ]
   }

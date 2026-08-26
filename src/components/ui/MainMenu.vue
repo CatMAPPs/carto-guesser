@@ -6,7 +6,7 @@
     <div class="menu-content">
       <!-- Title -->
       <div class="menu-header animate-fade-in">
-        <h1 class="menu-logo">RETORN AL TERRITORI</h1>
+        <h1 class="menu-logo" style ="user-select: none">RETORN AL TERRITORI</h1>
         <div class="menu-divider"></div>
         <p class="menu-tagline">Endevina on va ser feta la foto</p>
       </div>
@@ -39,11 +39,14 @@
 
       <!-- ICGC logo -->
       <div class="menu-footer animate-fade-in stagger-4">
-        <img
-          src="/logos/ICGC_white_norma.svg"
-          alt="Institut Cartogràfic i Geològic de Catalunya"
+      <a href="https://github.com/orgs/CatMAPPs/repositories" target="_blank" rel="noopener noreferrer"> <img
+          src="/logos/catmaps.jpg"
+          alt="CatMapps"
+          title="CatMapps"
           class="icgc-logo"
+          
         />
+       </a> 
       </div>
     </div>
   </div>
