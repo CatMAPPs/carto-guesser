@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8" />
+<title>Figures.json - Mapa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; }
+  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  .maplibregl-popup-content {
+    max-width: 260px;
+    font-family: sans-serif;
+    font-size: 13px;
+  }
+  .maplibregl-popup-content h3 {
+    margin: 0 0 4px;
+    font-size: 14px;
+  }
+  .popup-thumb {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    display: block;
+    cursor: pointer;
+  }
+  #count {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 13px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    z-index: 1;
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="count">Carregant...</div>
+
+<script>
+  const map = new maplibregl.Map({
+    container: 'map',
+    style: 'https://geoserveis.icgc.cat/styles/mapa-base-topografic.json',
+    center: [1.8, 41.7],
+    zoom: 7
+  });
+
+  map.addControl(new maplibregl.NavigationControl(), 'top-right');
+
+  fetch('figures.json')
+    .then(res => res.json())
+    .then(figures => {
+      const countEl = document.getElementById('count');
+      const bounds = new maplibregl.LngLatBounds();
+      let plotted = 0;
+
+      figures.forEach(fig => {
+        const lat = Number(fig.lat);
+        const lon = Number(fig.lon);
+        if (!Number.isFinite(lat) || !Number.isFinite(lon)) return;
+
+        const marker = new maplibregl.Marker({ color: '#e63946' })
+          .setLngLat([lon, lat])
+          .setPopup(
+            new maplibregl.Popup({ offset: 25 }).setHTML(`
+              ${fig.nom_fitxer ? '<a href="images/' + encodeURIComponent(fig.nom_fitxer) + '" target="_blank" rel="noopener noreferrer"><img class="popup-thumb" src="images/' + encodeURIComponent(fig.nom_fitxer) + '" alt="' + escapeHtml(fig.nom ?? '') + '" loading="lazy" /></a>' : ''}
+              <h3>${escapeHtml(fig.nom ?? '')}</h3>
+              <p>${escapeHtml(fig.descripcio ?? '')}</p>
+              <p><em>${escapeHtml(fig.autor ?? '')} - ${escapeHtml(String(fig.any_foto ?? ''))}</em></p>
+            `)
+          )
+          .addTo(map);
+
+        bounds.extend([lon, lat]);
+        plotted++;
+      });
+
+      countEl.textContent = `${plotted} / ${figures.length} punts representats`;
+
+      if (plotted > 0) {
+        map.fitBounds(bounds, { padding: 40, maxZoom: 12 });
+      }
+    })
+    .catch(err => {
+      document.getElementById('count').textContent = 'Error carregant figures.json: ' + err.message;
+      console.error(err);
+    });
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+</script>
+</body>
+</html>
