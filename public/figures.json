@@ -1358,5 +1358,90 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ]
+  },
+    {
+    "id": "81",
+    "level": 2,
+    "nom": "Ermita de la Pertusa, Àger",
+    "nom_fitxer": "pertu_montsec.jpg",
+    "autor": "Jordi Mir i Parache",
+    "lat": 42.044083195214064, 
+    "lon": 0.6726186926792628,
+    "any_foto": 1985,
+    "descripcio": "Santuari de Queralt, Berga",
+    "attributions": [
+      {
+        "name": "Fons Jordi Mir i Parache (1905-1980), Arxiu Comarcal del Pallars Jussà",
+        "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ACPJ350-120-N-7208"
+      }
+    ]
+  },
+      {
+    "id": "81",
+    "level": 2,
+    "nom": "Presa de Flix",
+    "nom_fitxer": "presa_flix.jpg",
+    "autor": "FUERZAS ELÉCTRICAS DE CATALUÑA, S.A (FECSA)",
+    "lat": 41.23286894581361,  
+    "lon": 0.5473108911966293,
+    "any_foto": 1948,
+    "descripcio": "Estat de les obres de construcció de la presa de Flix",
+    "attributions": [
+      {
+        "name": "FUERZAS ELÉCTRICAS DE CATALUÑA, S.A (FECSA)",
+        "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-211-N-12689"
+      }
+    ]
+  },
+      {
+    "id": "82",
+    "level": 2,
+    "nom": "Estació de Les Planes",
+    "nom_fitxer": "les_planes.jpg",
+    "autor": "FERROCARRILS DE LA GENERALITAT DE CATALUNYA (FGC)",
+    "lat": 41.42744081660604,  
+    "lon": 2.091676436934488, 
+    "any_foto": "1890-1910",
+    "descripcio": "Estació de Les Planes",
+    "attributions": [
+      {
+        "name": "FERROCARRILS DE LA GENERALITAT DE CATALUNYA (FGC), Arxiu Nacional de Catalunya ",
+        "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-757-N-157"
+      }
+    ]
+  },
+      {
+    "id": "83",
+    "level": 2,
+    "nom": "Pas del riu Segre a Balaguer",
+    "nom_fitxer": "balaguer_segre.jpg",
+    "autor": "JOSEP PUIG I CADAFALCH",
+    "lat": 41.42744081660604,  
+    "lon": 2.091676436934488, 
+    "any_foto": "1890-1920",
+    "descripcio": "Pas del riu Segre a Balaguer",
+    "attributions": [
+      {
+        "name": "JOSEP PUIG I CADAFALCH, Arxiu Nacional de Catalunya ",
+        "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-737-N-2510"
+      }
+    ]
+  },
+      {
+    "id": "84",
+    "level": 1,
+    "nom": "Santuari de la Mare de Déu de Núria",
+    "nom_fitxer": "nuria.jpg",
+    "autor": "FERROCARRILS DE LA GENERALITAT DE CATALUNYA (FGC)",
+    "lat": 42.39719523139297, 
+    "lon": 2.1535842630667963,
+    "any_foto": "1910",
+    "descripcio": "Santuari de la Mare de Déu de Núria",
+    "attributions": [
+      {
+        "name": "FERROCARRILS DE LA GENERALITAT DE CATALUNYA (FGC), Arxiu Nacional de Catalunya ",
+        "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-757-N-2498"
+      }
+    ]
   }
 ]
