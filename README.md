@@ -1,10 +1,16 @@
-# Carto Guesser
+# Retorn al Territori
 
-Joc de geografia basat en fotografies històriques de Catalunya. L'usuari ha d'identificar la ubicació on va ser feta cada fotografia, clicant al mapa. Desenvolupat per a l'ICGC.
+**Retorn al Territori** és un joc geogràfic i d'exploració del patrimoni de Catalunya basat en fotografies històriques. A cada ronda, el jugador ha d'identificar al mapa el lloc on es va fer la fotografia i posar a prova el seu coneixement del territori. El projecte té una finalitat educativa i divulgativa i convida a descobrir l'evolució del paisatge i dels espais patrimonials catalans.
+
+## Llicència
+
+El codi propi d'aquest projecte es distribueix sota la llicència [MIT](LICENSE).
+
+Les fotografies i les seves metadades s'inclouen amb finalitats exclusivament educatives, culturals i divulgatives, sense ànim de lucre ni finalitat comercial. Els drets corresponents poden pertànyer als seus autors o a les institucions titulars i poden estar subjectes a condicions específiques de llicència i atribució segons la font original. Aquest projecte no autoritza la reutilització, reproducció o explotació comercial d'aquests materials. Consulta sempre l'enllaç de procedència i les condicions aplicables abans de reutilitzar qualsevol fotografia o dada.
 
 ## Modes de joc
 
-- **Repte Diari** — 3 fotografies fixes per dia, iguals per a tothom. El resultat es desa localment. Les fotos segueixen l'ordre dels `id` i es reinicien després de l'11è dia.
+- **Repte Diari** — 3 fotografies fixes per dia, iguals per a tothom: una de nivell 1, una de nivell 2 i una de nivell 3, sempre en aquest ordre. Cada fotografia té assignat el camp `challengeDate` (`DD/MM/AAAA`). Les fotografies sense data queden reservades per a futurs reptes.
 
 ## Stack tecnològic
 
@@ -145,7 +151,19 @@ Canvia la constant `DAILY_ROUNDS` per ajustar el nombre de fotografies:
 const DAILY_ROUNDS = 3
 ```
 
-Les fotografies diàries es determinen pel dia del mes: el dia 1 mostra els `id` 1–3, el dia 2 els `id` 4–6, i així successivament. Amb 33 fotografies i 3 per dia, el cicle es reinicia el dia 12.
+El repte diari es configura mitjançant el camp `challengeDate` de `public/figures.json`, amb el format `DD/MM/AAAA`. Cada data ha de tenir exactament tres fotografies: una de `level: 1`, una de `level: 2` i una de `level: 3`. La funció `getDailyChallengeFigures` filtra les fotografies per `challengeDate`, les ordena per nivell i les retorna sempre en l'ordre 1 → 2 → 3.
+
+Exemple per a l'1 de setembre de 2026:
+
+```json
+[
+  { "level": 1, "challengeDate": "01/09/2026" },
+  { "level": 2, "challengeDate": "01/09/2026" },
+  { "level": 3, "challengeDate": "01/09/2026" }
+]
+```
+
+Les fotografies amb `"challengeDate": null` queden reservades per a futurs reptes. Si la data actual encara no té un repte assignat, el sistema mostra tres d'aquestes fotografies reservades, seleccionades de manera estable.
 
 ---
 
@@ -217,7 +235,7 @@ colors: {
 public/
 ├── figures.json          # Dades de totes les fotografies
 ├── images/               # Imatges de les fotografies
-└── logos/                # Logo ICGC i altres
+└── logos/                # Logos del projecte
 
 src/
 ├── components/
@@ -238,6 +256,3 @@ src/
 
 ---
 
-## Llicència
-
-Institut Cartogràfic i Geològic de Catalunya (ICGC) · 2025

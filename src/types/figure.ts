@@ -19,6 +19,8 @@ export interface Attribution {
  */
 export interface Figure {
   id: string
+  level: 1 | 2 | 3
+  challengeDate: string | null
   nom: string
   nom_fitxer: string
   autor: string

@@ -37,22 +37,52 @@
         </button>
       </nav>
 
-      <!-- ICGC logo -->
+      <!-- Project logo -->
       <div class="menu-footer animate-fade-in stagger-4">
       <a href="https://github.com/orgs/CatMAPPs/repositories" target="_blank" rel="noopener noreferrer"> <img
           src="/logos/catmaps.jpg"
           alt="CatMapps"
           title="CatMapps"
-          class="icgc-logo"
+          class="catmaps-logo"
           
         />
        </a> 
+        <p class="developed-by">Desenvolupat per CatMAPPs</p>
+        <button class="legal-link" type="button" @click="showLegalInfo = true">
+          Informació i llicències
+        </button>
       </div>
     </div>
   </div>
+
+  <Modal v-model="showLegalInfo" title="Informació i llicències" size="sm">
+    <div class="legal-content">
+      <p>
+        <strong>Retorn al Territori</strong> és un projecte amb finalitat educativa, cultural i divulgativa, sense ànim de lucre ni finalitat comercial.
+      </p>
+      <p>
+        El codi propi es distribueix sota la llicència
+        <a href="https://github.com/CatMAPPs/carto-guesser/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>.
+      </p>
+      <p>
+        Les fotografies i les seves metadades poden tenir drets i condicions d'ús diferents segons la font original. Consulta l'enllaç de procedència abans de reutilitzar-les.
+      </p>
+      <p>
+        Per contactar amb l'equip, visita el nostre
+        <a href="https://github.com/orgs/CatMAPPs/repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+        o envia'ns un missatge directe a
+        <a href="https://www.instagram.com/catmapps/" target="_blank" rel="noopener noreferrer">Instagram</a>.
+      </p>
+    </div>
+  </Modal>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+import Modal from './Modal.vue'
+
+const showLegalInfo = ref(false)
+
 const emit = defineEmits<{
   modeSelect: []
 }>()
@@ -162,17 +192,34 @@ const emit = defineEmits<{
 
 /* ── Footer (logo) ── */
 .menu-footer {
-  @apply flex justify-center mt-12;
+  @apply flex flex-col items-center justify-center mt-12;
 }
 
-.icgc-logo {
+.catmaps-logo {
   height: 56px;
-  opacity: 0.45;
+  opacity: 0.8;
+  border-radius: 40px;
   filter: brightness(1.1);
   transition: opacity 0.3s;
 }
 
-.icgc-logo:hover {
-  opacity: 0.7;
+.catmaps-logo:hover {
+  opacity: 1;
+}
+
+.developed-by {
+  @apply mt-3 text-xs text-noir-text/50;
+}
+
+.legal-link {
+  @apply mt-4 block text-xs text-noir-text/40 underline-offset-4 transition-colors hover:text-noir-gold hover:underline;
+}
+
+.legal-content {
+  @apply space-y-4 text-sm leading-relaxed text-noir-text/75;
+}
+
+.legal-content a {
+  @apply text-noir-gold underline underline-offset-2;
 }
 </style>

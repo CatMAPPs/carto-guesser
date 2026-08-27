@@ -4,7 +4,8 @@
       <Card class="results-card">
       <!-- Header -->
       <div class="results-header">
-        <h1 class="results-title">Joc completat!</h1>
+        <div class="game-name">RETORN AL TERRITORI · {{ formattedChallengeDate }}</div>
+        <h1 class="results-title">Repte aconseguit!</h1>
         <div class="final-score">
           <span class="score-value">{{ totalScore }}</span>
           <span class="score-max">/ {{ maxScore }}</span>
@@ -12,12 +13,12 @@
         <div class="score-percentage">
           {{ scorePercentage }}% Precisió
         </div>
-        <div class="challenge-date">{{ formattedChallengeDate }}</div>
+   
       </div>
 
       <!-- Component breakdown -->
       <div class="breakdown-section">
-        <h2 class="breakdown-title">Desglossament de la puntuació</h2>
+        <h3 class="breakdown-title" style="        place-self: anchor-center;;">Desglossament de la puntuació</h3>
         
         <div class="breakdown-grid">
           <!-- Location -->
@@ -109,7 +110,7 @@
         <!-- Sharing -->
         <div class="share-section">
         <h2 class="share-title">Comparteix la teva precisió geogràfica</h2>
-          <p class="share-description">El text es copiarà al porta-retalls. També pots guardar la imatge per compartir el teu resultat.</p>
+          <p class="share-description">Es copiarà l’URL del joc. També pots guardar la imatge per compartir el teu resultat.</p>
           <button class="share-button" type="button" aria-label="Compartir resultat" title="Compartir resultat" @click="shareResult">
             <svg class="share-icon-stroke" aria-hidden="true" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
             <span>Share</span>
@@ -145,6 +146,32 @@
         >
           Tornar a l'inici
         </Button>
+      </div>
+
+      <div class="contact-section">
+        <p class="contact-disclaimer">Troba’ns a GitHub i Instagram. Per contactar-nos, envia’ns un missatge directe o escriu-nos a GitHub.</p>
+        <div class="contact-links">
+          <a
+            class="contact-link"
+            href="https://github.com/orgs/CatMAPPs/repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Obrir GitHub de CatMAPPs"
+            title="GitHub"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2.5a9.5 9.5 0 0 0-3 18.52c.48.09.65-.21.65-.46v-1.63c-2.65.58-3.21-1.12-3.21-1.12-.43-1.1-1.06-1.39-1.06-1.39-.87-.6.07-.59.07-.59.96.07 1.47.99 1.47.99.86 1.47 2.25 1.05 2.8.8.09-.62.34-1.05.61-1.29-2.12-.24-4.35-1.06-4.35-4.72 0-1.04.37-1.89.98-2.56-.1-.24-.43-1.21.09-2.53 0 0 .8-.26 2.62.98a9.1 9.1 0 0 1 4.77 0c1.82-1.24 2.62-.98 2.62-.98.52 1.32.19 2.29.09 2.53.61.67.98 1.52.98 2.56 0 3.67-2.23 4.48-4.36 4.72.35.3.65.88.65 1.78v2.64c0 .25.17.55.66.46A9.5 9.5 0 0 0 12 2.5Z"/></svg>
+          </a>
+          <a
+            class="contact-link"
+            href="https://www.instagram.com/catmapps/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Obrir Instagram de CatMAPPs"
+            title="Instagram"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3Zm0 1.8A2.7 2.7 0 0 0 4.8 7.5v9a2.7 2.7 0 0 0 2.7 2.7h9a2.7 2.7 0 0 0 2.7-2.7v-9a2.7 2.7 0 0 0-2.7-2.7h-9Zm9.75 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7.7a4.3 4.3 0 1 1 0 8.6 4.3 4.3 0 0 1 0-8.6Zm0 1.8a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/></svg>
+          </a>
+        </div>
       </div>
 
       <!-- Guest signup prompt -->
@@ -234,7 +261,7 @@ const shareText = computed(() =>
   `He completat el Repte Diari del ${formattedChallengeDate.value} amb un ${scorePercentage.value}% de precisió geogràfica!`,
 );
 
-const shareUrl = computed(() => window.location.href);
+const shareUrl = computed(() => 'https://catmapps.github.io/retorn-al-territori');
 
 const scorePercentage = computed(() => {
   return Math.round((props.totalScore / maxScore.value) * 100);
@@ -285,6 +312,7 @@ const shareImage = async () => {
       await navigator.share({
         title: 'Repte Diari',
         text: shareText.value,
+        url: shareUrl.value,
         files: [imageFile],
       });
       return true;
@@ -307,35 +335,13 @@ const shareImage = async () => {
 
 const copyShareText = async () => {
   try {
-    await navigator.clipboard.writeText(`${shareText.value} ${shareUrl.value}`);
-    shareFeedback.value = 'Text copiat al porta-retalls';
+    await navigator.clipboard.writeText(shareUrl.value);
+    shareFeedback.value = 'URL copiada al porta-retalls';
   } catch {
     shareFeedback.value = 'No s’ha pogut copiar el text';
   }
 };
 
-const shareOn = async (network: 'linkedin' | 'instagram' | 'whatsapp' | 'facebook' | 'x') => {
-  const encodedText = encodeURIComponent(shareText.value);
-  const encodedUrl = encodeURIComponent(shareUrl.value);
-
-  if (network === 'instagram') {
-    await shareImage();
-    return;
-  }
-
-  const shareLinks = {
-    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
-    whatsapp: `https://wa.me/?text=${encodedText}%20${encodedUrl}`,
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
-    x: `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`,
-  };
-
-  if (network === 'linkedin' || network === 'facebook') {
-    await copyShareText();
-  }
-
-  window.open(shareLinks[network], '_blank', 'noopener,noreferrer');
-};
 </script>
 
 <style scoped>
@@ -345,6 +351,9 @@ const shareOn = async (network: 'linkedin' | 'instagram' | 'whatsapp' | 'faceboo
 
 .results-card {
   @apply w-full max-w-3xl animate-fade-in;
+  background-image: linear-gradient(rgba(27, 25, 24, 0.9), rgba(27, 25, 24, 0.9)), url('/images/pl_espanya.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .results-card-wrapper {
@@ -365,6 +374,10 @@ const shareOn = async (network: 'linkedin' | 'instagram' | 'whatsapp' | 'faceboo
 
 .results-header {
   @apply text-center pb-6 border-b border-noir-gold/20 mb-6;
+}
+
+.game-name {
+  @apply mb-3 text-sm font-bebas tracking-[0.16em] text-noir-text/60;
 }
 
 .results-title {
@@ -485,6 +498,30 @@ const shareOn = async (network: 'linkedin' | 'instagram' | 'whatsapp' | 'faceboo
 
 .share-description {
   @apply mx-auto mb-4 max-w-md text-xs leading-relaxed text-noir-text/60;
+}
+
+.contact-section {
+  @apply mt-6 border-t border-noir-gold/10 pt-4 text-center;
+}
+
+.contact-disclaimer {
+  @apply mx-auto max-w-md text-xs leading-relaxed text-noir-text/50;
+}
+
+.contact-links {
+  @apply mt-3 flex justify-center gap-3;
+}
+
+.contact-link {
+  @apply inline-flex h-9 w-9 items-center justify-center rounded-lg border border-noir-gold/20 text-noir-gold transition-colors;
+}
+
+.contact-link:hover {
+  @apply border-noir-gold/50 bg-noir-surface;
+}
+
+.contact-link svg {
+  @apply h-5 w-5 fill-current;
 }
 
 .signup-prompt {
