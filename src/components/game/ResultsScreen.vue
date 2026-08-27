@@ -127,7 +127,7 @@
           full-width
           @click="handlePlayAgain"
         >
-          Jugar de Nou
+          {{ playAgainLabel }}
         </Button>
         <Button
           v-if="showLeaderboard"
@@ -220,6 +220,7 @@ interface Props {
   globalRank?: number;
   streak?: number;
   showPlayAgain?: boolean;
+  playAgainLabel?: string;
   showLeaderboard?: boolean;
   showSignupPrompt?: boolean;
   showStats?: boolean;
@@ -229,6 +230,7 @@ const props = withDefaults(defineProps<Props>(), {
   totalRounds: 10,
   challengeDate: new Date().toISOString().split('T')[0],
   showPlayAgain: true,
+  playAgainLabel: 'Jugar de Nou',
   showLeaderboard: false,
   showSignupPrompt: false,
   showStats: false,

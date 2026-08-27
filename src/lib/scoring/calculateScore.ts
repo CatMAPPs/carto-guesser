@@ -41,7 +41,9 @@ export function calculateRoundScore(
   // Calculate speed bonus (0-100 points)
   // Only applies to Daily Challenge and Multiplayer
   const speedBonus =
-    mode === 'daily_challenge' ? calculateSpeedBonus(submissionTime) : 0
+    mode === 'daily_challenge' && spatialScore > 0
+      ? calculateSpeedBonus(submissionTime)
+      : 0
 
   // Calculate total (max 900)
   const total = Math.min(900, spatialScore + speedBonus)

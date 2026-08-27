@@ -20,6 +20,8 @@ const figures = ref<Figure[]>([])
 const currentFigure = ref<Figure | null>(null)
 const currentRoundNumber = ref(1)
 const scores = ref<RoundScore[]>([])
+const isPracticeMode = ref(false)
+const showPracticeComplete = ref(false)
 const finalResults = ref<{ totalScore: number; componentScores: { spatial: number; temporal: number; name: number; speed: number } } | null>(null)
 
 const today = computed(() => new Date().toISOString().split('T')[0])
@@ -27,14 +29,34 @@ const dailyKey = computed(() => `carto_daily_${today.value}`)
 
 const isLastRound = computed(() => currentRoundNumber.value >= DAILY_ROUNDS)
 
+const isValidSavedResult = (value: unknown): value is NonNullable<typeof finalResults.value> => {
+  if (!value || typeof value !== 'object') return false
+
+  const result = value as Record<string, unknown>
+  const components = result.componentScores
+  if (!components || typeof components !== 'object') return false
+
+  return (
+    typeof result.totalScore === 'number' &&
+    ['spatial', 'temporal', 'name', 'speed'].every(
+      (key) => typeof (components as Record<string, unknown>)[key] === 'number',
+    )
+  )
+}
+
 const loadChallenge = async () => {
   try {
     // Check if already completed today
     const saved = localStorage.getItem(dailyKey.value)
     if (saved) {
-      finalResults.value = JSON.parse(saved)
-      gameState.value = 'completed'
-      return
+      const savedResult: unknown = JSON.parse(saved)
+      if (isValidSavedResult(savedResult)) {
+        finalResults.value = savedResult
+        gameState.value = 'completed'
+        return
+      }
+
+      localStorage.removeItem(dailyKey.value)
     }
 
     figures.value = await getDailyChallengeFigures(today.value)
@@ -51,6 +73,16 @@ const startChallenge = () => {
   currentRoundNumber.value = 1
   scores.value = []
   gameState.value = 'playing'
+}
+
+const replayChallenge = async () => {
+  if (figures.value.length === 0) {
+    figures.value = await getDailyChallengeFigures(today.value)
+  }
+
+  isPracticeMode.value = true
+  showPracticeComplete.value = false
+  startChallenge()
 }
 
 const handleSubmit = (
@@ -100,9 +132,13 @@ const handleNextRound = () => {
       },
     }
 
-    // Save to localStorage so the user sees "already completed" on reload
-    localStorage.setItem(dailyKey.value, JSON.stringify(result))
-    finalResults.value = result
+    if (!isPracticeMode.value) {
+      // The first completed attempt is the official daily score.
+      localStorage.setItem(dailyKey.value, JSON.stringify(result))
+      finalResults.value = result
+    } else {
+      showPracticeComplete.value = true
+    }
     gameState.value = 'completed'
   } else {
     currentRoundNumber.value++
@@ -172,14 +208,33 @@ onMounted(() => {
     <!-- Results -->
     <div v-else-if="gameState === 'completed' && finalResults" class="flex items-center justify-center min-h-screen">
       <ResultsScreen
+        v-if="!showPracticeComplete"
         :total-score="finalResults.totalScore"
         :component-scores="finalResults.componentScores"
         :total-rounds="DAILY_ROUNDS"
         :challenge-date="today"
-        :show-play-again="false"
+        :show-play-again="true"
+        play-again-label="Practicar de nou"
         :show-leaderboard="false"
+        @play-again="replayChallenge"
         @back-to-menu="goToMenu"
       />
+      <Card v-else class="max-w-2xl w-full text-center">
+        <div class="space-y-6">
+          <div>
+            <h1 class="text-3xl font-bebas text-noir-gold mb-3">REPTE D’AVUI COMPLETAT!</h1>
+            <p class="text-noir-text/80">Torna demà per descobrir-ne un de nou.</p>
+          </div>
+          <div class="space-y-3">
+            <Button size="lg" class="w-full" @click="replayChallenge">
+              Practicar de nou
+            </Button>
+            <Button variant="ghost" size="lg" class="w-full" @click="goToMenu">
+              Tornar al menú
+            </Button>
+          </div>
+        </div>
+      </Card>
     </div>
   </div>
 </template>

@@ -41,6 +41,9 @@ export async function getDailyChallengeFigures(date: string): Promise<Figure[]> 
   const reservedFigures = all
     .filter((figure) => figure.challengeDate === null)
     .sort((first, second) => Number(first.id) - Number(second.id))
+    .filter((figure, index, figures) =>
+      figures.findIndex((candidate) => candidate.nom_fitxer === figure.nom_fitxer) === index,
+    )
     .slice(0, 3)
 
   if (reservedFigures.length < 3) {

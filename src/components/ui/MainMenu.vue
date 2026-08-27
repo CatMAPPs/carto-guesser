@@ -17,9 +17,12 @@
           <div class="mode-icon">🏆</div>
           <div class="mode-body">
             <div class="mode-title">Repte Diari</div>
-            <div class="mode-desc">3 fotografies cada dia </div>
+            <div class="mode-desc">
+              {{ isDailyCompleted ? 'Repte completat avui' : '3 fotografies cada dia' }}
+            </div>
           </div>
-          <span class="mode-arrow" aria-hidden="true">→</span>
+          <span v-if="isDailyCompleted" class="mode-completed" aria-label="Repte completat avui" title="Repte completat avui">✓</span>
+          <span v-else class="mode-arrow" aria-hidden="true">→</span>
         </button>
 
         <button
@@ -52,40 +55,48 @@
           Informació i llicències
         </button>
       </div>
+
+      <Modal v-model="showLegalInfo" title="Informació i llicències" size="sm">
+        <div class="legal-content">
+          <p>
+            <strong>Retorn al Territori</strong> és un projecte amb finalitat educativa, cultural i divulgativa, sense ànim de lucre ni finalitat comercial.
+          </p>
+          <p>
+            El codi propi es distribueix sota la llicència
+            <a href="https://github.com/CatMAPPs/carto-guesser/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>.
+          </p>
+          <p>
+            Les fotografies i les seves metadades poden tenir drets i condicions d'ús diferents segons la font original. Consulta l'enllaç de procedència abans de reutilitzar-les.
+          </p>
+          <p>
+            Per contactar amb l'equip, visita el nostre
+            <a href="https://github.com/orgs/CatMAPPs/repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
+            o envia'ns un missatge directe a
+            <a href="https://www.instagram.com/catmapps/" target="_blank" rel="noopener noreferrer">Instagram</a>.
+          </p>
+        </div>
+      </Modal>
     </div>
   </div>
-
-  <Modal v-model="showLegalInfo" title="Informació i llicències" size="sm">
-    <div class="legal-content">
-      <p>
-        <strong>Retorn al Territori</strong> és un projecte amb finalitat educativa, cultural i divulgativa, sense ànim de lucre ni finalitat comercial.
-      </p>
-      <p>
-        El codi propi es distribueix sota la llicència
-        <a href="https://github.com/CatMAPPs/carto-guesser/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>.
-      </p>
-      <p>
-        Les fotografies i les seves metadades poden tenir drets i condicions d'ús diferents segons la font original. Consulta l'enllaç de procedència abans de reutilitzar-les.
-      </p>
-      <p>
-        Per contactar amb l'equip, visita el nostre
-        <a href="https://github.com/orgs/CatMAPPs/repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
-        o envia'ns un missatge directe a
-        <a href="https://www.instagram.com/catmapps/" target="_blank" rel="noopener noreferrer">Instagram</a>.
-      </p>
-    </div>
-  </Modal>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import Modal from './Modal.vue'
 
 const showLegalInfo = ref(false)
+const isDailyCompleted = ref(false)
+
+const todayKey = () => `carto_daily_${new Date().toISOString().split('T')[0]}`
 
 const emit = defineEmits<{
   modeSelect: []
+  freePlaySelect: []
 }>()
+
+onMounted(() => {
+  isDailyCompleted.value = Boolean(localStorage.getItem(todayKey()))
+})
 </script>
 
 <style scoped>
@@ -184,6 +195,10 @@ const emit = defineEmits<{
 
 .mode-status {
   @apply text-[0.65rem] uppercase tracking-wider text-noir-gold/50 flex-shrink-0;
+}
+
+.mode-completed {
+  @apply flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-noir-gold/50 text-lg text-noir-gold;
 }
 
 .group:hover .mode-arrow {

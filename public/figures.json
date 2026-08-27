@@ -1115,24 +1115,7 @@
     ],
     "challengeDate": null
   },
-  {
-    "id": "75",
-    "level": 2,
-    "nom": "Castell: Església de Sant Vicenç, Cardona",
-    "nom_fitxer": "cardona.jpg",
-    "autor": "Família Cuyàs",
-    "lat": 41.914375015138596,
-    "lon": 1.6853453681292037,
-    "any_foto": 1956,
-    "descripcio": "Castell: Església de Sant Vicenç, Cardona",
-    "attributions": [
-      {
-        "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
-        "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
-      }
-    ],
-    "challengeDate": null
-  },
+
   {
     "id": "76",
     "level": 2,

@@ -13,6 +13,11 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/DailyChallengeView.vue'),
   },
   {
+    path: '/play/free',
+    name: 'free-play',
+    redirect: { name: 'home' },
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'not-found',
     component: () => import('@/views/NotFoundView.vue'),

@@ -19,7 +19,7 @@
           <span class="row-detail">
             {{ roundScore.distanceKm !== undefined ? `${roundScore.distanceKm.toFixed(0)} km` : '' }}
           </span>
-          <span class="row-pts">{{ roundScore.spatial }}</span>
+          <span class="row-pts">{{ roundScore.spatial }}/800</span>
         </div>
         <div class="bar-track">
           <div class="bar-fill" :style="{ width: `${(roundScore.spatial / 800) * 100}%` }"></div>
@@ -27,12 +27,12 @@
       </div>
 
       <!-- Speed bonus -->
-      <div v-if="roundScore.speed > 0" class="score-row">
+      <div class="score-row">
         <div class="row-meta">
           <span class="row-icon">⚡</span>
           <span class="row-label">Velocitat</span>
           <span class="row-detail">{{ submissionTime ? `${submissionTime.toFixed(1)}s` : '' }}</span>
-          <span class="row-pts">+{{ roundScore.speed }}</span>
+          <span class="row-pts">{{ roundScore.speed }}/100</span>
         </div>
         <div class="bar-track">
           <div class="bar-fill speed" :style="{ width: `${Math.min(roundScore.speed, 100)}%` }"></div>
