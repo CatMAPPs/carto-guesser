@@ -175,6 +175,7 @@ onMounted(() => {
         :total-score="finalResults.totalScore"
         :component-scores="finalResults.componentScores"
         :total-rounds="DAILY_ROUNDS"
+        :challenge-date="today"
         :show-play-again="false"
         :show-leaderboard="false"
         @back-to-menu="goToMenu"

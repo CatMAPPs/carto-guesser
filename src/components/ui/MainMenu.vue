@@ -17,7 +17,7 @@
           <div class="mode-icon">🏆</div>
           <div class="mode-body">
             <div class="mode-title">Repte Diari</div>
-            <div class="mode-desc">Un repte per dia · Compartit per tothom</div>
+            <div class="mode-desc">3 fotografies cada dia </div>
           </div>
           <span class="mode-arrow" aria-hidden="true">→</span>
         </button>
