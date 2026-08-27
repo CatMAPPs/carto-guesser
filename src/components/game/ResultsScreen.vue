@@ -109,26 +109,11 @@
         <!-- Sharing -->
         <div class="share-section">
         <h2 class="share-title">Comparteix la teva precisió geogràfica</h2>
-        <div class="share-options">
+          <p class="share-description">El text es copiarà al porta-retalls. També pots guardar la imatge per compartir el teu resultat.</p>
           <button class="share-button" type="button" aria-label="Compartir resultat" title="Compartir resultat" @click="shareResult">
             <svg class="share-icon-stroke" aria-hidden="true" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
+            <span>Share</span>
           </button>
-          <button class="share-button" type="button" aria-label="Compartir a LinkedIn" title="LinkedIn" @click="shareOn('linkedin')">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 8.5H3V21h3.5V8.5ZM4.75 3A2.05 2.05 0 1 0 4.75 7.1 2.05 2.05 0 0 0 4.75 3ZM21 13.84c0-3.76-2-5.51-4.66-5.51a4.02 4.02 0 0 0-3.64 2.01V8.5H9.2V21h3.5v-6.19c0-1.63.3-3.2 2.32-3.2 1.99 0 2.01 1.86 2.01 3.31V21H21v-7.16Z"/></svg>
-          </button>
-          <button class="share-button" type="button" aria-label="Compartir a Instagram" title="Instagram" @click="shareOn('instagram')">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3Zm0 1.8A2.7 2.7 0 0 0 4.8 7.5v9a2.7 2.7 0 0 0 2.7 2.7h9a2.7 2.7 0 0 0 2.7-2.7v-9a2.7 2.7 0 0 0-2.7-2.7h-9Zm9.75 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7.7a4.3 4.3 0 1 1 0 8.6 4.3 4.3 0 0 1 0-8.6Zm0 1.8a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"/></svg>
-          </button>
-          <button class="share-button" type="button" aria-label="Compartir a WhatsApp" title="WhatsApp" @click="shareOn('whatsapp')">
-            <svg class="share-icon-stroke" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.6 1.5c.1.2.1.4-.1.6l-.5.6c.7 1.1 1.5 1.7 2.6 2.3l.5-.6c.2-.2.4-.2.6-.1l1.5.7c.2.1.3.3.2.5-.1.8-.6 1.3-1.3 1.4-1.2.1-2.8-.8-4-1.9-1.2-1.1-2.2-2.6-2.3-3.8-.1-.5.1-.9.5-1.2Z"/></svg>
-          </button>
-          <button class="share-button" type="button" aria-label="Compartir a Facebook" title="Facebook" @click="shareOn('facebook')">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M13.5 21v-8h2.75l.42-3h-3.17V8.08c0-.87.24-1.46 1.49-1.46h1.8V3.94c-.31-.04-1.37-.14-2.6-.14-2.57 0-4.33 1.57-4.33 4.45V10H7v3h2.86v8h3.64Z"/></svg>
-          </button>
-          <button class="share-button" type="button" aria-label="Compartir a X" title="X" @click="shareOn('x')">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18.9 3H22l-6.77 7.74L23.2 21h-6.24l-4.88-6.38L6.5 21H3.4l7.24-8.28L3 3h6.4l4.41 5.83L18.9 3Zm-1.1 16.2h1.73L8.47 4.7H6.61L17.8 19.2Z"/></svg>
-          </button>
-        </div>
         <p v-if="shareFeedback" class="share-feedback" role="status">{{ shareFeedback }}</p>
       </div>
 
@@ -261,12 +246,11 @@ const handleBackToMenu = () => emit('backToMenu');
 const handleSignup = () => emit('signup');
 
 const shareResult = async () => {
+  await copyShareText();
   const sharedImage = await shareImage();
   if (sharedImage) {
     return;
   }
-
-  await copyShareText();
 };
 
 const shareImage = async () => {
@@ -331,8 +315,26 @@ const copyShareText = async () => {
 };
 
 const shareOn = async (network: 'linkedin' | 'instagram' | 'whatsapp' | 'facebook' | 'x') => {
-  void network;
-  await shareImage();
+  const encodedText = encodeURIComponent(shareText.value);
+  const encodedUrl = encodeURIComponent(shareUrl.value);
+
+  if (network === 'instagram') {
+    await shareImage();
+    return;
+  }
+
+  const shareLinks = {
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+    whatsapp: `https://wa.me/?text=${encodedText}%20${encodedUrl}`,
+    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+    x: `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`,
+  };
+
+  if (network === 'linkedin' || network === 'facebook') {
+    await copyShareText();
+  }
+
+  window.open(shareLinks[network], '_blank', 'noopener,noreferrer');
 };
 </script>
 
@@ -457,12 +459,8 @@ const shareOn = async (network: 'linkedin' | 'instagram' | 'whatsapp' | 'faceboo
   @apply text-lg sm:text-xl font-playfair text-noir-gold mb-4;
 }
 
-.share-options {
-  @apply flex flex-wrap justify-center gap-2;
-}
-
 .share-button {
-  @apply inline-flex h-10 w-10 items-center justify-center rounded-lg border border-noir-gold/20 bg-noir-surface text-noir-text transition-colors;
+  @apply inline-flex items-center justify-center gap-2 rounded-lg border border-noir-gold/20 bg-noir-surface px-4 py-2 text-sm text-noir-text transition-colors;
 }
 
 .share-button:hover {
@@ -483,6 +481,10 @@ const shareOn = async (network: 'linkedin' | 'instagram' | 'whatsapp' | 'faceboo
 
 .share-feedback {
   @apply mt-3 text-xs text-noir-text/60;
+}
+
+.share-description {
+  @apply mx-auto mb-4 max-w-md text-xs leading-relaxed text-noir-text/60;
 }
 
 .signup-prompt {
