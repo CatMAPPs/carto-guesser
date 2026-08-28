@@ -35,7 +35,7 @@ const emit = defineEmits<{
 
 const mapElement = ref<HTMLElement | null>(null);
 
-const { guessedCoordinates, showCorrectLocation, clearMap, resetView } = useMap(mapElement);
+const { guessedCoordinates, showCorrectLocation, clearMap, resetView, focusApproximateLocation } = useMap(mapElement);
 
 watch(guessedCoordinates, (coords) => {
   if (coords && !props.disabled) {
@@ -43,7 +43,7 @@ watch(guessedCoordinates, (coords) => {
   }
 });
 
-defineExpose({ clearMap, resetView, showCorrectLocation });
+defineExpose({ clearMap, resetView, showCorrectLocation, focusApproximateLocation });
 </script>
 
 <style scoped>

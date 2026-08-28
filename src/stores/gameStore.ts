@@ -66,6 +66,7 @@ const store = createStore<GameStore>((set, get) => ({
       [],
       guess.submission_time,
       session.mode,
+      guess.spatial_max ?? 800,
     )
 
     const updatedRound: RoundState = {

@@ -15,7 +15,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas/id/10372/rec/2"
       }
     ],
-    "challengeDate": "01/09/2026"
+    "challengeDate": "01/09/2026",
+    "municipi": "Tossa de Mar",
+    "comarca": "La Selva"
   },
   {
     "id": "2",
@@ -33,7 +35,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas/id/7720/rec/2"
       }
     ],
-    "challengeDate": "02/09/2026"
+    "challengeDate": "02/09/2026",
+    "municipi": "Puigcerdà",
+    "comarca": "La Cerdanya"
   },
   {
     "id": "3",
@@ -51,7 +55,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas/id/1120/rec/1"
       }
     ],
-    "challengeDate": "03/09/2026"
+    "challengeDate": "03/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "6",
@@ -69,7 +75,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "04/09/2026"
+    "challengeDate": "04/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "7",
@@ -87,7 +95,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "05/09/2026"
+    "challengeDate": "05/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "9",
@@ -105,7 +115,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "06/09/2026"
+    "challengeDate": "06/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "10",
@@ -123,7 +135,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "07/09/2026"
+    "challengeDate": "07/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "11",
@@ -141,7 +155,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "08/09/2026"
+    "challengeDate": "08/09/2026",
+    "municipi": "Torrelles de Llobregat",
+    "comarca": "El Baix Llobregat"
   },
   {
     "id": "12",
@@ -159,7 +175,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "09/09/2026"
+    "challengeDate": "09/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "16",
@@ -177,7 +195,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "10/09/2026"
+    "challengeDate": "10/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "19",
@@ -195,7 +215,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "11/09/2026"
+    "challengeDate": "11/09/2026",
+    "municipi": "Vic",
+    "comarca": "Osona"
   },
   {
     "id": "20",
@@ -213,7 +235,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "12/09/2026"
+    "challengeDate": "12/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "25",
@@ -231,7 +255,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "13/09/2026"
+    "challengeDate": "13/09/2026",
+    "municipi": "Cervera",
+    "comarca": "La Segarra"
   },
   {
     "id": "28",
@@ -249,7 +275,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "14/09/2026"
+    "challengeDate": "14/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "29",
@@ -267,7 +295,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "15/09/2026"
+    "challengeDate": "15/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "31",
@@ -285,7 +315,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "16/09/2026"
+    "challengeDate": "16/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "32",
@@ -303,7 +335,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "17/09/2026"
+    "challengeDate": "17/09/2026",
+    "municipi": "Girona",
+    "comarca": "El Gironès"
   },
   {
     "id": "38",
@@ -321,7 +355,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "18/09/2026"
+    "challengeDate": "18/09/2026",
+    "municipi": "Monistrol de Montserrat",
+    "comarca": "El Bages"
   },
   {
     "id": "48",
@@ -339,7 +375,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "19/09/2026"
+    "challengeDate": "19/09/2026",
+    "municipi": "Saldes",
+    "comarca": "El Berguedà"
   },
   {
     "id": "50",
@@ -357,7 +395,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "20/09/2026"
+    "challengeDate": "20/09/2026",
+    "municipi": "Lleida",
+    "comarca": "El Segrià"
   },
   {
     "id": "53",
@@ -375,7 +415,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "21/09/2026"
+    "challengeDate": "21/09/2026",
+    "municipi": "Banyoles",
+    "comarca": "El Pla de l'Estany"
   },
   {
     "id": "58",
@@ -393,7 +435,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "22/09/2026"
+    "challengeDate": "22/09/2026",
+    "municipi": "Roda de Berà",
+    "comarca": "El Tarragonès"
   },
   {
     "id": "59",
@@ -411,7 +455,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "23/09/2026"
+    "challengeDate": "23/09/2026",
+    "municipi": "Tarragona",
+    "comarca": "El Tarragonès"
   },
   {
     "id": "62",
@@ -429,7 +475,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "24/09/2026"
+    "challengeDate": "24/09/2026",
+    "municipi": "Miravet",
+    "comarca": "La Ribera d'Ebre"
   },
   {
     "id": "68",
@@ -447,7 +495,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "25/09/2026"
+    "challengeDate": "25/09/2026",
+    "municipi": "Castellfollit de la Roca",
+    "comarca": "La Garrotxa"
   },
   {
     "id": "69",
@@ -465,7 +515,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "26/09/2026"
+    "challengeDate": "26/09/2026",
+    "municipi": "Besalú",
+    "comarca": "La Garrotxa"
   },
   {
     "id": "71",
@@ -483,7 +535,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "27/09/2026"
+    "challengeDate": "27/09/2026",
+    "municipi": "Portbou",
+    "comarca": "L'Alt Empordà"
   },
   {
     "id": "72",
@@ -501,7 +555,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "28/09/2026"
+    "challengeDate": "28/09/2026",
+    "municipi": "Camprodon",
+    "comarca": "El Ripollès"
   },
   {
     "id": "73",
@@ -519,7 +575,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "29/09/2026"
+    "challengeDate": "29/09/2026",
+    "municipi": "Alp",
+    "comarca": "La Cerdanya"
   },
   {
     "id": "85",
@@ -537,25 +595,29 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-757-N-2498"
       }
     ],
-    "challengeDate": "30/09/2026"
+    "challengeDate": "30/09/2026",
+    "municipi": "Queralbs",
+    "comarca": "El Ripollès"
   },
   {
     "id": "4",
     "level": 2,
-    "nom": "Plaça del Dr. Bartomeu Robert Casa de la Ciutat, façana posterior",
+    "nom": "Plaça del Dr. Bartomeu Robert Casa de la Ciutat, façana posterior, Sabadell",
     "nom_fitxer": "sabadell_robert.jpg",
     "autor": "Família Cuyàs",
     "lat": 41.546502,
     "lon": 2.108778,
     "any_foto": 1932,
-    "descripcio": "Plaça del Dr. Bartomeu Robert Casa de la Ciutat, façana posterior.",
+    "descripcio": "Plaça del Dr. Bartomeu Robert Casa de la Ciutat, façana posterior, Sabadell.",
     "attributions": [
       {
         "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "01/09/2026"
+    "challengeDate": "01/09/2026",
+    "municipi": "Sabadell",
+    "comarca": "El Vallès Occidental"
   },
   {
     "id": "5",
@@ -573,7 +635,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "02/09/2026"
+    "challengeDate": "02/09/2026",
+    "municipi": "Castelldefels",
+    "comarca": "El Baix Llobregat"
   },
   {
     "id": "14",
@@ -591,7 +655,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "03/09/2026"
+    "challengeDate": "03/09/2026",
+    "municipi": "Molins de Rei",
+    "comarca": "El Baix Llobregat"
   },
   {
     "id": "17",
@@ -609,7 +675,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "04/09/2026"
+    "challengeDate": "04/09/2026",
+    "municipi": "Vilanova de Sau",
+    "comarca": "Osona"
   },
   {
     "id": "18",
@@ -627,7 +695,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "05/09/2026"
+    "challengeDate": "05/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "21",
@@ -645,7 +715,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "06/09/2026"
+    "challengeDate": "06/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "22",
@@ -663,7 +735,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "07/09/2026"
+    "challengeDate": "07/09/2026",
+    "municipi": "Blanes",
+    "comarca": "La Selva"
   },
   {
     "id": "23",
@@ -681,7 +755,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "08/09/2026"
+    "challengeDate": "08/09/2026",
+    "municipi": "El Bruc",
+    "comarca": "L'Anoia"
   },
   {
     "id": "24",
@@ -699,7 +775,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "09/09/2026"
+    "challengeDate": "09/09/2026",
+    "municipi": "Caldes de Montbui",
+    "comarca": "El Vallès Oriental"
   },
   {
     "id": "27",
@@ -717,7 +795,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "10/09/2026"
+    "challengeDate": "10/09/2026",
+    "municipi": "Cerdanyola del Vallès",
+    "comarca": "El Vallès Occidental"
   },
   {
     "id": "33",
@@ -735,7 +815,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "11/09/2026"
+    "challengeDate": "11/09/2026",
+    "municipi": "Torrelles de Llobregat",
+    "comarca": "El Baix Llobregat"
   },
   {
     "id": "34",
@@ -753,7 +835,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "12/09/2026"
+    "challengeDate": "12/09/2026",
+    "municipi": "Ripoll",
+    "comarca": "El Ripollès"
   },
   {
     "id": "35",
@@ -771,25 +855,29 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "13/09/2026"
+    "challengeDate": "13/09/2026",
+    "municipi": "Vallirana",
+    "comarca": "El Baix Llobregat"
   },
   {
     "id": "36",
     "level": 2,
-    "nom": "Port de la Bonaigua",
+    "nom": "Port de la Bonaigua, Alt Àneu",
     "nom_fitxer": "port_bonaigua.jpg",
     "autor": "Família Cuyàs",
     "lat": 42.66396336861228,
     "lon": 0.9794436130003559,
     "any_foto": "1905-1980",
-    "descripcio": "Port de la Bonaigua",
+    "descripcio": "Port de la Bonaigua, Alt Àneu",
     "attributions": [
       {
         "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "14/09/2026"
+    "challengeDate": "14/09/2026",
+    "municipi": "Alt Àneu",
+    "comarca": "Pallars Sobirà"
   },
   {
     "id": "37",
@@ -807,7 +895,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "15/09/2026"
+    "challengeDate": "15/09/2026",
+    "municipi": "Ribes de Freser",
+    "comarca": "El Ripollès"
   },
   {
     "id": "41",
@@ -825,7 +915,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "16/09/2026"
+    "challengeDate": "16/09/2026",
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "44",
@@ -843,7 +935,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "17/09/2026"
+    "challengeDate": "17/09/2026",
+    "municipi": "Mataró",
+    "comarca": "El Maresme"
   },
   {
     "id": "45",
@@ -861,7 +955,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "18/09/2026"
+    "challengeDate": "18/09/2026",
+    "municipi": "Cadaqués",
+    "comarca": "L'Alt Empordà"
   },
   {
     "id": "46",
@@ -879,7 +975,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "19/09/2026"
+    "challengeDate": "19/09/2026",
+    "municipi": "Castelló d'Empúries",
+    "comarca": "L'Alt Empordà"
   },
   {
     "id": "47",
@@ -897,7 +995,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "20/09/2026"
+    "challengeDate": "20/09/2026",
+    "municipi": "Tortosa",
+    "comarca": "El Baix Ebre"
   },
   {
     "id": "49",
@@ -915,7 +1015,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "21/09/2026"
+    "challengeDate": "21/09/2026",
+    "municipi": "Lleida",
+    "comarca": "El Segrià"
   },
   {
     "id": "55",
@@ -933,7 +1035,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "22/09/2026"
+    "challengeDate": "22/09/2026",
+    "municipi": "Tona",
+    "comarca": "Osona"
   },
   {
     "id": "56",
@@ -951,25 +1055,29 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "23/09/2026"
+    "challengeDate": "23/09/2026",
+    "municipi": "Bigues i Riells del Fai",
+    "comarca": "El Vallès Oriental"
   },
   {
     "id": "57",
     "level": 2,
-    "nom": "La Mola, Sant Llorenç del Munt i l'Obac",
+    "nom": "La Mola, Sant Llorenç del Munt i l'Obac, Matadepera",
     "nom_fitxer": "la_mola.jpg",
     "autor": "Família Cuyàs",
     "lat": 41.640927575915484,
     "lon": 2.0180381413416897,
     "any_foto": 1950,
-    "descripcio": "La Mola, Sant Llorenç del Munt i l'Obac",
+    "descripcio": "La Mola, Sant Llorenç del Munt i l'Obac, Matadepera",
     "attributions": [
       {
         "name": "Fons Família Cuyàs (1905-1980), Institut Cartogràfic i Geològic de Catalunya",
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "24/09/2026"
+    "challengeDate": "24/09/2026",
+    "municipi": "Matadepera",
+    "comarca": "El Vallès Occidental"
   },
   {
     "id": "60",
@@ -987,7 +1095,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "25/09/2026"
+    "challengeDate": "25/09/2026",
+    "municipi": "Cambrils",
+    "comarca": "El Baix Camp"
   },
   {
     "id": "61",
@@ -1005,7 +1115,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "26/09/2026"
+    "challengeDate": "26/09/2026",
+    "municipi": "La Ràpita",
+    "comarca": "El Montsià"
   },
   {
     "id": "63",
@@ -1023,7 +1135,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "27/09/2026"
+    "challengeDate": "27/09/2026",
+    "municipi": "Amposta",
+    "comarca": "El Montsià"
   },
   {
     "id": "64",
@@ -1041,7 +1155,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "28/09/2026"
+    "challengeDate": "28/09/2026",
+    "municipi": "Caldes d'Estrac",
+    "comarca": "El Maresme"
   },
   {
     "id": "65",
@@ -1059,7 +1175,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "29/09/2026"
+    "challengeDate": "29/09/2026",
+    "municipi": "Sant Pol de Mar",
+    "comarca": "El Maresme"
   },
   {
     "id": "66",
@@ -1077,7 +1195,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "30/09/2026"
+    "challengeDate": "30/09/2026",
+    "municipi": "Hostalric",
+    "comarca": "La Selva"
   },
   {
     "id": "67",
@@ -1095,7 +1215,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Fogars de Montclús",
+    "comarca": "El Vallès Oriental"
   },
   {
     "id": "74",
@@ -1113,9 +1235,10 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Cardona",
+    "comarca": "El Bages"
   },
-
   {
     "id": "76",
     "level": 2,
@@ -1132,7 +1255,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Santa Pau",
+    "comarca": "La Garrotxa"
   },
   {
     "id": "77",
@@ -1150,7 +1275,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Manresa",
+    "comarca": "El Bages"
   },
   {
     "id": "81",
@@ -1168,7 +1295,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ACPJ350-120-N-7208"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Berga",
+    "comarca": "El Berguedà"
   },
   {
     "id": "82",
@@ -1186,25 +1315,29 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-211-N-12689"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Flix",
+    "comarca": "La Ribera d'Ebre"
   },
   {
     "id": "83",
     "level": 2,
-    "nom": "Estació de Les Planes",
+    "nom": "Estació de Les Planes, Barcelona",
     "nom_fitxer": "les_planes.jpg",
     "autor": "FERROCARRILS DE LA GENERALITAT DE CATALUNYA (FGC)",
     "lat": 41.42744081660604,
     "lon": 2.091676436934488,
     "any_foto": "1890-1910",
-    "descripcio": "Estació de Les Planes",
+    "descripcio": "Estació de Les Planes, Barcelona",
     "attributions": [
       {
         "name": "FERROCARRILS DE LA GENERALITAT DE CATALUNYA (FGC), Arxiu Nacional de Catalunya ",
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-757-N-157"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Barcelona",
+    "comarca": "El Barcelonès"
   },
   {
     "id": "84",
@@ -1222,7 +1355,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-737-N-2510"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Balaguer",
+    "comarca": "La Noguera"
   },
   {
     "id": "86",
@@ -1240,7 +1375,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Vandellòs i l'Hospitalet de l'Infant",
+    "comarca": "El Baix Camp"
   },
   {
     "id": "88",
@@ -1258,7 +1395,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-284-N-157"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Vimbodí i Poblet",
+    "comarca": "La Conca de Barberà"
   },
   {
     "id": "89",
@@ -1276,7 +1415,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC2-127-N-325"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Peralada",
+    "comarca": "L'Alt Empordà"
   },
   {
     "id": "90",
@@ -1294,7 +1435,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas/id/7257/rec/5"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Cava",
+    "comarca": "L'Alt Urgell"
   },
   {
     "id": "93",
@@ -1312,7 +1455,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-972-N-251"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Palamós",
+    "comarca": "El Baix Empordà"
   },
   {
     "id": "8",
@@ -1330,7 +1475,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "01/09/2026"
+    "challengeDate": "01/09/2026",
+    "municipi": "Montferrer i Castellbò",
+    "comarca": "L'Alt Urgell"
   },
   {
     "id": "13",
@@ -1348,7 +1495,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "02/09/2026"
+    "challengeDate": "02/09/2026",
+    "municipi": "Gironella",
+    "comarca": "El Berguedà"
   },
   {
     "id": "15",
@@ -1366,7 +1515,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "03/09/2026"
+    "challengeDate": "03/09/2026",
+    "municipi": "Barberà del Vallès",
+    "comarca": "El Vallès Occidental"
   },
   {
     "id": "26",
@@ -1384,7 +1535,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "04/09/2026"
+    "challengeDate": "04/09/2026",
+    "municipi": "Sant Cugat del Vallès",
+    "comarca": "El Vallès Occidental"
   },
   {
     "id": "30",
@@ -1402,7 +1555,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "05/09/2026"
+    "challengeDate": "05/09/2026",
+    "municipi": "Gavà",
+    "comarca": "El Baix Llobregat"
   },
   {
     "id": "39",
@@ -1420,7 +1575,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "06/09/2026"
+    "challengeDate": "06/09/2026",
+    "municipi": "Olèrdola",
+    "comarca": "L'Alt Penedès"
   },
   {
     "id": "40",
@@ -1438,7 +1595,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "07/09/2026"
+    "challengeDate": "07/09/2026",
+    "municipi": "Vilassar de Dalt",
+    "comarca": "El Maresme"
   },
   {
     "id": "42",
@@ -1456,7 +1615,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "08/09/2026"
+    "challengeDate": "08/09/2026",
+    "municipi": "Maçanet de la Selva",
+    "comarca": "La Selva"
   },
   {
     "id": "43",
@@ -1474,7 +1635,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "09/09/2026"
+    "challengeDate": "09/09/2026",
+    "municipi": "Organyà",
+    "comarca": "L'Alt Urgell"
   },
   {
     "id": "51",
@@ -1492,7 +1655,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "10/09/2026"
+    "challengeDate": "10/09/2026",
+    "municipi": "Salàs de Pallars",
+    "comarca": "El Pallars Jussà"
   },
   {
     "id": "52",
@@ -1510,7 +1675,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "11/09/2026"
+    "challengeDate": "11/09/2026",
+    "municipi": "Solsona",
+    "comarca": "El Solsonès"
   },
   {
     "id": "54",
@@ -1528,7 +1695,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "12/09/2026"
+    "challengeDate": "12/09/2026",
+    "municipi": "La Cellera de Ter",
+    "comarca": "La Selva"
   },
   {
     "id": "70",
@@ -1546,7 +1715,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "13/09/2026"
+    "challengeDate": "13/09/2026",
+    "municipi": "Forallac",
+    "comarca": "El Baix Empordà"
   },
   {
     "id": "78",
@@ -1564,7 +1735,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "14/09/2026"
+    "challengeDate": "14/09/2026",
+    "municipi": "Igualada",
+    "comarca": "L'Anoia"
   },
   {
     "id": "79",
@@ -1582,7 +1755,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "15/09/2026"
+    "challengeDate": "15/09/2026",
+    "municipi": "Montblanc",
+    "comarca": "La Conca de Barberà"
   },
   {
     "id": "80",
@@ -1600,7 +1775,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas"
       }
     ],
-    "challengeDate": "16/09/2026"
+    "challengeDate": "16/09/2026",
+    "municipi": "Berga",
+    "comarca": "El Berguedà"
   },
   {
     "id": "87",
@@ -1618,7 +1795,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-284-N-127"
       }
     ],
-    "challengeDate": "17/09/2026"
+    "challengeDate": "17/09/2026",
+    "municipi": "Aiguamúrcia",
+    "comarca": "L'Alt Camp"
   },
   {
     "id": "91",
@@ -1636,7 +1815,9 @@
         "url": "https://cartotecadigital.icgc.cat/digital/collection/cuyas/id/9642/rec/11"
       }
     ],
-    "challengeDate": "18/09/2026"
+    "challengeDate": "18/09/2026",
+    "municipi": "Cornudella de Montsant",
+    "comarca": "El Priorat"
   },
   {
     "id": "92",
@@ -1654,7 +1835,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-737-N-2510"
       }
     ],
-    "challengeDate": "19/09/2026"
+    "challengeDate": "19/09/2026",
+    "municipi": "Balaguer",
+    "comarca": "La Noguera"
   },
   {
     "id": "94",
@@ -1672,7 +1855,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ACVOC90-394-N-11"
       }
     ],
-    "challengeDate": "20/09/2026"
+    "challengeDate": "20/09/2026",
+    "municipi": "Sant Llorenç Savall",
+    "comarca": "El Vallès Occidental"
   },
   {
     "id": "95",
@@ -1690,7 +1875,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ACRI150-55-N-58"
       }
     ],
-    "challengeDate": "21/09/2026"
+    "challengeDate": "21/09/2026",
+    "municipi": "Ripoll",
+    "comarca": "El Ripollès"
   },
   {
     "id": "96",
@@ -1708,7 +1895,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-137-N-19"
       }
     ],
-    "challengeDate": "22/09/2026"
+    "challengeDate": "22/09/2026",
+    "municipi": "Artesa de Segre",
+    "comarca": "La Noguera"
   },
   {
     "id": "97",
@@ -1726,7 +1915,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-1360-N-12658"
       }
     ],
-    "challengeDate": "23/09/2026"
+    "challengeDate": "23/09/2026",
+    "municipi": "Oliana",
+    "comarca": "L'Alt Urgell"
   },
   {
     "id": "98",
@@ -1744,7 +1935,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-1236-N-17011"
       }
     ],
-    "challengeDate": "24/09/2026"
+    "challengeDate": "24/09/2026",
+    "municipi": "Guissona",
+    "comarca": "La Segarra"
   },
   {
     "id": "99",
@@ -1762,7 +1955,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-284-N-889"
       }
     ],
-    "challengeDate": "25/09/2026"
+    "challengeDate": "25/09/2026",
+    "municipi": "L'Albi",
+    "comarca": "Les Garrigues"
   },
   {
     "id": "100",
@@ -1780,7 +1975,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-1236-N-17229"
       }
     ],
-    "challengeDate": "26/09/2026"
+    "challengeDate": "26/09/2026",
+    "municipi": "Sarroca de Lleida",
+    "comarca": "El Segrià"
   },
   {
     "id": "101",
@@ -1798,7 +1995,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ACPJ350-120-N-8002"
       }
     ],
-    "challengeDate": "27/09/2026"
+    "challengeDate": "27/09/2026",
+    "municipi": "Sant Pere Sallavinera",
+    "comarca": "L'Anoia"
   },
   {
     "id": "101",
@@ -1816,7 +2015,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ACPJ350-120-N-8002"
       }
     ],
-    "challengeDate": "28/09/2026"
+    "challengeDate": "28/09/2026",
+    "municipi": "Sant Pere Sallavinera",
+    "comarca": "L'Anoia"
   },
   {
     "id": "102",
@@ -1834,7 +2035,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-64-N-793"
       }
     ],
-    "challengeDate": "29/09/2026"
+    "challengeDate": "29/09/2026",
+    "municipi": "Mediona",
+    "comarca": "L'Alt Penedès"
   },
   {
     "id": "103",
@@ -1852,7 +2055,9 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ANC1-42-N-33447"
       }
     ],
-    "challengeDate": "30/09/2026"
+    "challengeDate": "30/09/2026",
+    "municipi": "Sallent",
+    "comarca": "El Bages"
   },
   {
     "id": "104",
@@ -1870,6 +2075,8 @@
         "url": "https://arxiusenlinia.cultura.gencat.cat/#/cercabasica/detallunitat/ACAN10-100-N-123"
       }
     ],
-    "challengeDate": null
+    "challengeDate": null,
+    "municipi": "Igualada",
+    "comarca": "L'Anoia"
   }
 ]

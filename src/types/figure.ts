@@ -28,5 +28,7 @@ export interface Figure {
   lon: number
   any_foto: number
   descripcio: string
+  municipi?: string
+  comarca?: string
   attributions?: Attribution[]
 }

@@ -41,6 +41,7 @@ const finalResults = computed(() => {
 const handleSubmit = (
   guess: { name: string; coordinates: { lat: number; lon: number } | null; year: number },
   submissionTime: number,
+  spatialMax: number,
 ) => {
   if (!guess.coordinates) return
 
@@ -50,6 +51,7 @@ const handleSubmit = (
     lon: guess.coordinates.lon,
     year: guess.year,
     submission_time: submissionTime,
+    spatial_max: spatialMax,
   }
 
   gameStore.getState().submitGuess(gameGuess)
@@ -65,6 +67,7 @@ const handleSubmit = (
       total: currentRound.score.total,
       distanceKm: currentRound.score.distance_km,
       yearDiff: currentRound.score.year_diff,
+      spatialMax: currentRound.score.spatial_max,
     }
     gameplayRef.value.showRevealPhase(roundScore)
   }

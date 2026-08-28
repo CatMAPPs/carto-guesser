@@ -88,6 +88,7 @@ const replayChallenge = async () => {
 const handleSubmit = (
   guess: { name: string; coordinates: { lat: number; lon: number } | null; year: number },
   submissionTime: number,
+  spatialMax: number,
 ) => {
   if (!currentFigure.value || !gameplayRef.value || !guess.coordinates) return
 
@@ -103,6 +104,7 @@ const handleSubmit = (
     [],
     submissionTime,
     'daily_challenge',
+    spatialMax,
   )
 
   const roundScore: RoundScore = {
@@ -113,6 +115,7 @@ const handleSubmit = (
     total: calculatedScore.total,
     distanceKm: calculatedScore.distance_km,
     yearDiff: calculatedScore.year_diff,
+    spatialMax: calculatedScore.spatial_max,
   }
 
   scores.value.push(roundScore)

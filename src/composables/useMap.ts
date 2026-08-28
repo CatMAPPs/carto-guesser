@@ -164,6 +164,22 @@ export function useMap(mapContainer: Ref<HTMLElement | null>, options: UseMapOpt
     map.value.setZoom(mergedOptions.zoom)
   }
 
+  const focusApproximateLocation = (lat: number, lon: number) => {
+    if (!map.value) return
+
+    const angle = Math.random() * Math.PI * 2
+    const distanceKm = 6 + Math.random() * 4
+    const latOffset = (distanceKm * Math.cos(angle)) / 111.32
+    const lonOffset = (distanceKm * Math.sin(angle)) / (111.32 * Math.cos((lat * Math.PI) / 180))
+
+    map.value.flyTo({
+      center: [lon + lonOffset, lat + latOffset],
+      zoom: 10,
+      duration: 900,
+      essential: true,
+    })
+  }
+
   const cleanup = () => {
     if (map.value) {
       map.value.remove()
@@ -187,6 +203,7 @@ export function useMap(mapContainer: Ref<HTMLElement | null>, options: UseMapOpt
     showCorrectLocation,
     clearMap,
     resetView,
+    focusApproximateLocation,
     cleanup,
   }
 }

@@ -38,7 +38,7 @@
     <!-- Actions -->
     <div class="reveal-actions">
       <Button variant="primary" size="lg" full-width @click="handleNext">
-        {{ isLastRound ? 'Veure Resultats' : 'Pròxima Ronda' }}
+        {{ isLastRound ? 'Veure Resultats' : 'Ronda següent' }}
       </Button>
       <Button variant="ghost" size="lg" full-width @click="emit('backToHome')">
         Tornar a la Home

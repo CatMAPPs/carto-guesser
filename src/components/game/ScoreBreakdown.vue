@@ -19,10 +19,10 @@
           <span class="row-detail">
             {{ roundScore.distanceKm !== undefined ? `${roundScore.distanceKm.toFixed(0)} km` : '' }}
           </span>
-          <span class="row-pts">{{ roundScore.spatial }}/800</span>
+          <span class="row-pts">{{ roundScore.spatial }}/{{ roundScore.spatialMax || 800 }}</span>
         </div>
         <div class="bar-track">
-          <div class="bar-fill" :style="{ width: `${(roundScore.spatial / 800) * 100}%` }"></div>
+          <div class="bar-fill" :style="{ width: `${(roundScore.spatial / (roundScore.spatialMax || 800)) * 100}%` }"></div>
         </div>
       </div>
 

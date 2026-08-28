@@ -17,6 +17,17 @@
         <div v-if="showTimer" class="timer" :class="{ 'timer-urgent': timeRemaining <= 10 }">
           {{ formatTime(timeRemaining) }}
         </div>
+        <button
+          v-if="!showReveal"
+          class="hint-btn"
+          :class="{ 'hint-btn-used': hintUsed }"
+          :disabled="hintUsed"
+          :title="hintUsed ? 'Pista utilitzada' : 'Utilitzar una pista'"
+          aria-label="Utilitzar una pista"
+          @click="showHintModal = true"
+        >
+          ?
+        </button>
         <button class="home-btn" title="Abandonar la partida" @click="showAbandonModal = true">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
@@ -53,8 +64,14 @@
 
       <!-- Controls (hidden during reveal) -->
       <div v-show="!showReveal" class="controls-section">
+        <div v-if="hintSpatialMax === 600 && currentFigure" class="hint-wrap">
+          <p class="hint-location">
+            <span class="hint-label">Pista:</span>
+            {{ currentFigure.municipi || 'Municipi no disponible' }}<span v-if="currentFigure.comarca">, {{ currentFigure.comarca }}</span>
+          </p>
+        </div>
         <div class="submit-wrap">
-          <p class="hint-text" :class="{ invisible: canSubmit }">Marca una ubicació al mapa</p>
+          <!-- <p class="hint-text" :class="{ invisible: canSubmit }">Marca una ubicació al mapa</p> -->
           <Button
             variant="primary"
             size="lg"
@@ -95,6 +112,22 @@
         <Button variant="primary" size="sm" @click="confirmAbandon">Abandonar</Button>
       </template>
     </Modal>
+
+    <Modal v-model="showHintModal" size="sm">
+      <template #header>
+        <h2 class="text-base font-playfair text-noir-text">Tria una pista</h2>
+      </template>
+      <p class="text-sm text-noir-text/60 leading-relaxed">
+        Cada pista redueix la puntuació màxima d'ubicació.
+      </p>
+      <div class="hint-options">
+        <Button variant="primary" size="sm" full-width @click="useLocationHint">Municipi i comarca (-200 punts)</Button>
+        <Button variant="primary" size="sm" full-width @click="useMapHint">Zona aproximada (-300 punts)</Button>
+      </div>
+      <template #footer>
+        <Button class="hint-cancel-btn" variant="ghost" size="sm" @click="showHintModal = false">Cancel·lar</Button>
+      </template>
+    </Modal>
   </div>
 </template>
 
@@ -133,7 +166,7 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const emit = defineEmits<{
-  submit: [guess: { name: string; coordinates: Coordinates | null; year: number }, submissionTime: number]; // year always 0
+  submit: [guess: { name: string; coordinates: Coordinates | null; year: number }, submissionTime: number, spatialMax: number]; // year always 0
   nextRound: [];
   timeExpired: [];
   backToHome: [];
@@ -149,7 +182,18 @@ const currentRoundScore = ref<RoundScore | null>(null);
 
 const guess = ref<Guess>({ coordinates: null });
 const showAbandonModal = ref(false);
+const showHintModal = ref(false);
+const hintSpatialMax = ref<number | null>(null);
+const hintUsed = computed(() => hintSpatialMax.value !== null);
 const confirmAbandon = () => { showAbandonModal.value = false; emit('backToHome'); };
+const useLocationHint = () => { hintSpatialMax.value = 600; showHintModal.value = false; };
+const useMapHint = () => {
+  hintSpatialMax.value = 500;
+  showHintModal.value = false;
+  if (mapRef.value && props.currentFigure) {
+    mapRef.value.focusApproximateLocation(props.currentFigure.lat, props.currentFigure.lon);
+  }
+};
 
 let timerInterval: number | null = null;
 
@@ -169,7 +213,7 @@ const handleSubmit = () => {
   isSubmitting.value = true;
   submissionTime.value = (Date.now() - roundStartTime.value) / 1000;
   if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
-  emit('submit', { name: '', year: 0, ...guess.value }, submissionTime.value);
+  emit('submit', { name: '', year: 0, ...guess.value }, submissionTime.value, hintSpatialMax.value ?? 800);
 };
 
 const handleNextRound = () => emit('nextRound');
@@ -193,6 +237,8 @@ const resetRound = () => {
   guess.value = { coordinates: null };
   submissionTime.value = 0;
   currentRoundScore.value = null;
+  hintSpatialMax.value = null;
+  showHintModal.value = false;
   if (mapRef.value) { mapRef.value.clearMap(); mapRef.value.resetView(); }
   if (timerInterval) clearInterval(timerInterval);
   startTimer();
@@ -297,6 +343,29 @@ defineExpose({ showRevealPhase, resetRound });
   color: #ff6b6b;
 }
 
+.hint-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(203,161,53,0.28);
+  color: #cba135;
+  font-family: ui-monospace, monospace;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  transition: all 0.2s;
+}
+
+.hint-btn:hover:not(:disabled) {
+  background: rgba(203,161,53,0.12);
+  border-color: rgba(203,161,53,0.7);
+}
+
+.hint-btn-used {
+  cursor: default;
+  opacity: 0.35;
+}
+
 /* ──────────────────────────────────────────────
    MOBILE-FIRST GRID
    ────────────────────────────────────────────── */
@@ -338,6 +407,42 @@ defineExpose({ showRevealPhase, resetRound });
   border: 1px solid rgba(203,161,53,0.08);
   background: rgba(27,25,24,0.85);
   padding: 10px 14px 12px;
+}
+
+.hint-wrap {
+  margin-bottom: 6px;
+  padding: 4px 8px;
+  border: 1px solid rgba(203,161,53,0.28);
+  border-radius: 6px;
+  background: rgba(203,161,53,0.08);
+}
+
+.hint-location {
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.25;
+  font-weight: 600;
+  color: rgba(237,224,206,0.92);
+}
+
+.hint-label {
+  margin-right: 6px;
+  color: #cba135;
+}
+
+.hint-options {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.hint-cancel-btn {
+  color: #cd3d35 !important;
+}
+
+.hint-cancel-btn:hover {
+  color: #f06a62 !important;
 }
 
 .hint-text {

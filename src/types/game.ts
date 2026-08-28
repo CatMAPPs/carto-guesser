@@ -19,6 +19,7 @@ export interface Guess {
   lon: number
   year: number
   submission_time: number // seconds since round start
+  spatial_max?: number
 }
 
 /**
@@ -32,6 +33,7 @@ export interface RoundScore {
   total: number // 0-2500
   distance_km: number
   year_diff: number
+  spatial_max?: number
 }
 
 /**

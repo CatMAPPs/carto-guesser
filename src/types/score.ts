@@ -19,6 +19,7 @@ export interface RoundScore {
   total: number // 0-2500
   distanceKm?: number
   yearDiff?: number
+  spatialMax?: number
 }
 
 /**

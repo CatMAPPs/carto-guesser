@@ -19,15 +19,17 @@ export function calculateRoundScore(
   correctYear: number,
   aliases: string[] = [],
   submissionTime: number,
-  mode: GameMode
+  mode: GameMode,
+  maximumSpatialScore = 800,
 ): RoundScore {
   // Calculate spatial accuracy (0-800 points)
-  const { score: spatialScore, distance } = calculateSpatialScore(
+  const { score, distance } = calculateSpatialScore(
     guessedLat,
     guessedLon,
     correctLat,
     correctLon
   )
+  const spatialScore = Math.min(score, maximumSpatialScore)
 
   // Calculate temporal accuracy (0-800 points)
   const { score: temporalScore, difference: yearDiff } = calculateTemporalScore(
@@ -56,6 +58,7 @@ export function calculateRoundScore(
     total,
     distance_km: distance,
     year_diff: yearDiff,
+    spatial_max: maximumSpatialScore,
   }
 }
 
