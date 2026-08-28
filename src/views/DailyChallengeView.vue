@@ -25,6 +25,7 @@ const showPracticeComplete = ref(false)
 const finalResults = ref<{ totalScore: number; componentScores: { spatial: number; temporal: number; name: number; speed: number } } | null>(null)
 
 const today = computed(() => new Date().toISOString().split('T')[0])
+const formattedToday = computed(() => today.value.split('-').reverse().join('-'))
 const dailyKey = computed(() => `carto_daily_${today.value}`)
 
 const isLastRound = computed(() => currentRoundNumber.value >= DAILY_ROUNDS)
@@ -171,7 +172,15 @@ onMounted(() => {
         <div class="text-center space-y-6">
           <div>
             <h1 class="text-4xl font-bebas text-noir-gold mb-2">REPTE DIARI</h1>
-            <p class="text-noir-text/80">{{ today }}</p>
+            <p class="text-noir-text/80">{{ formattedToday }}</p>
+          </div>
+
+          <div class="border border-noir-gold/50 bg-noir-gold/10 p-4 text-left">
+            <p class="font-bold text-noir-gold">Període de proves</p>
+            <p class="mt-1 text-sm text-noir-text/80">
+              Fins a l’1 de setembre, els reptes diaris formen part d’un paquet de proves.
+              El repte oficial començarà l’1 de setembre.
+            </p>
           </div>
 
           <div class="space-y-4">
@@ -181,7 +190,7 @@ onMounted(() => {
               class="w-full"
               @click="startChallenge"
             >
-              Comença el Repte
+              Comença la prova
             </Button>
             <p v-else class="text-noir-red text-sm">No hi ha figures disponibles.</p>
 
