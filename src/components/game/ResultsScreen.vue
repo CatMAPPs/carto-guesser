@@ -375,7 +375,7 @@ const copyShareText = async () => {
 }
 
 .results-header {
-  @apply text-center pb-6 border-b border-noir-gold/20 mb-6;
+  @apply text-center pb-6 border-b border-noir-gold/20 mb-2;
 }
 
 .game-name {
@@ -383,7 +383,7 @@ const copyShareText = async () => {
 }
 
 .results-title {
-  @apply text-3xl sm:text-4xl font-playfair text-noir-gold mb-4;
+  @apply text-xl sm:text-4xl font-playfair text-noir-gold mb-4;
 }
 
 .final-score {
@@ -391,7 +391,7 @@ const copyShareText = async () => {
 }
 
 .score-value {
-  @apply text-5xl sm:text-6xl font-mono font-bold text-noir-text;
+  @apply text-3xl sm:text-6xl font-mono font-bold text-noir-text;
 }
 
 .score-max {
@@ -403,11 +403,11 @@ const copyShareText = async () => {
 }
 
 .breakdown-section {
-  @apply mb-6;
+  @apply mb-2;
 }
 
 .breakdown-title {
-  @apply text-xl sm:text-2xl font-playfair text-noir-text mb-4;
+  @apply text-lg sm:text-xl font-playfair text-noir-text mb-4;
 }
 
 .breakdown-grid {

@@ -1,7 +1,7 @@
 <template>
   <div class="reveal-phase">
     <!-- Figure info -->
-    <Card class="reveal-card">
+   <!--  <Card class="reveal-card"> -->
       <div class="reveal-header">
         <div class="figure-info">
           <h2 class="figure-nom">{{ figure.nom }}</h2>
@@ -11,7 +11,7 @@
       </div>
 
       <!-- Attributions -->
-      <div v-if="figure.attributions && figure.attributions.length > 0" class="attributions-section">
+      <!-- <div v-if="figure.attributions && figure.attributions.length > 0" class="attributions-section">
         <div class="attributions-label">Font:</div>
         <ul class="attributions-list">
           <li v-for="(attr, index) in figure.attributions" :key="index" class="attribution-item">
@@ -25,8 +25,8 @@
             </a>
           </li>
         </ul>
-      </div>
-    </Card>
+      </div> -->
+  <!--   </Card> -->
 
     <!-- Score -->
     <ScoreBreakdown
@@ -48,7 +48,7 @@
 </template>
 
 <script setup lang="ts">
-import Card from '@/components/ui/Card.vue'
+//import Card from '@/components/ui/Card.vue'
 import Button from '@/components/ui/Button.vue'
 import ScoreBreakdown from './ScoreBreakdown.vue'
 import type { Figure } from '@/types/figure'
@@ -88,8 +88,8 @@ const handleNext = () => emit('next')
 }
 
 .reveal-header {
-  @apply flex items-start justify-between gap-3 mb-3 pb-3;
-  border-bottom: 1px solid rgba(203,161,53,0.15);
+  @apply flex items-start justify-between gap-3 mb-0 pb-1;
+  /* border-bottom: 1px solid rgba(203,161,53,0.15); */
 }
 
 .figure-info {
