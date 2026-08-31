@@ -113,7 +113,7 @@
           <p class="share-description">Es copiarà l’URL del joc. També pots guardar la imatge per compartir el teu resultat.</p>
           <button class="share-button" type="button" aria-label="Compartir resultat" title="Compartir resultat" @click="shareResult">
             <svg class="share-icon-stroke" aria-hidden="true" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
-            <span>Share</span>
+            <span>Comparteix</span>
           </button>
         <p v-if="shareFeedback" class="share-feedback" role="status">{{ shareFeedback }}</p>
       </div>
