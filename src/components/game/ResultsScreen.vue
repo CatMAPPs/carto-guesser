@@ -148,6 +148,12 @@
         </Button>
       </div>
 
+      <div class="demo-notice">
+        <p class="demo-notice-text">
+          🗺️ Això és un joc demo! Si vols ajudar-nos a georeferenciar millor alguna fotografia, t'ho agrairem molt. ❤️
+        </p>
+      </div>
+
       <div class="contact-section">
         <p class="contact-disclaimer">Troba’ns a GitHub i Instagram. Per contactar-nos, envia’ns un missatge directe o escriu-nos a GitHub.</p>
         <div class="contact-links">
@@ -500,6 +506,14 @@ const copyShareText = async () => {
 
 .share-description {
   @apply mx-auto mb-4 max-w-md text-xs leading-relaxed text-noir-text/60;
+}
+
+.demo-notice {
+  @apply mt-6 rounded-lg border border-noir-gold/30 bg-noir-gold/10 px-4 py-3 text-center;
+}
+
+.demo-notice-text {
+  @apply mx-auto max-w-md text-xs leading-relaxed text-noir-text/80;
 }
 
 .contact-section {
