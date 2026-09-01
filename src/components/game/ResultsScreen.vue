@@ -72,8 +72,8 @@
             </div>
           </div> -->
 
-          <!-- Speed (if applicable) -->
-          <div v-if="componentScores.speed > 0" class="breakdown-item">
+          <!-- Speed -->
+          <div class="breakdown-item">
             <div class="breakdown-icon">⚡</div>
             <div class="breakdown-content">
               <div class="breakdown-label">Bonus de Velocitat</div>

@@ -1,19 +1,19 @@
 /**
  * Calculate speed bonus based on submission time
- * Formula: max(0, min(100, 110 - floor((time_seconds / 2)) * 10))
+ * Formula: max(0, 100 - floor(max(0, time_seconds - 15) / 2) * 10)
  * 
  * Time brackets:
- * - 0-10s: 100 points
- * - 10-12s: 90 points
- * - 12-14s: 80 points
- * - 14-16s: 70 points
- * - 16-18s: 60 points
- * - 18-20s: 50 points
- * - 20-22s: 40 points
- * - 22-24s: 30 points
- * - 24-26s: 20 points
- * - 26-28s: 10 points
- * - 28+s: 0 points
+ * - 0-15s: 100 points
+ * - 15-17s: 90 points
+ * - 17-19s: 80 points
+ * - 19-21s: 70 points
+ * - 21-23s: 60 points
+ * - 23-25s: 50 points
+ * - 25-27s: 40 points
+ * - 27-29s: 30 points
+ * - 29-31s: 20 points
+ * - 31-33s: 10 points
+ * - 33+s: 0 points
  * 
  * @param timeSeconds - Time taken to submit (in seconds)
  * @returns Speed bonus (0-100)
@@ -21,9 +21,9 @@
 export function calculateSpeedBonus(timeSeconds: number): number {
   if (timeSeconds < 0) return 0
 
-  const bonus = 110 - Math.floor(timeSeconds / 2) * 10
+  const bonus = 100 - Math.floor(Math.max(0, timeSeconds - 15) / 2) * 10
 
-  return Math.max(0, Math.min(100, bonus))
+  return Math.max(0, bonus)
 }
 
 /**
