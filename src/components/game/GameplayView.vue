@@ -20,13 +20,14 @@
         <button
           v-if="!showReveal"
           class="hint-btn"
-          :class="{ 'hint-btn-used': hintUsed }"
+          :class="{ 'hint-btn-used': hintUsed, 'hint-btn-static': hintOpened && !hintUsed }"
           :disabled="hintUsed"
           :title="hintUsed ? 'Pista utilitzada' : 'Utilitzar una pista'"
           aria-label="Utilitzar una pista"
-          @click="showHintModal = true"
+          @click="showHintModal = true; hintOpened = true"
         >
-          ?
+          <span class="hint-btn-icon">?</span>
+          <span class="hint-btn-label">Pista</span>
         </button>
         <button class="home-btn" title="Abandonar la partida" @click="showAbandonModal = true">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -184,6 +185,7 @@ const guess = ref<Guess>({ coordinates: null });
 const showAbandonModal = ref(false);
 const showHintModal = ref(false);
 const hintSpatialMax = ref<number | null>(null);
+const hintOpened = ref(false);
 const hintUsed = computed(() => hintSpatialMax.value !== null);
 const confirmAbandon = () => { showAbandonModal.value = false; emit('backToHome'); };
 const useLocationHint = () => { hintSpatialMax.value = 600; showHintModal.value = false; };
@@ -238,6 +240,7 @@ const resetRound = () => {
   submissionTime.value = 0;
   currentRoundScore.value = null;
   hintSpatialMax.value = null;
+  hintOpened.value = false;
   showHintModal.value = false;
   if (mapRef.value) { mapRef.value.clearMap(); mapRef.value.resetView(); }
   if (timerInterval) clearInterval(timerInterval);
@@ -344,16 +347,37 @@ defineExpose({ showRevealPhase, resetRound });
 }
 
 .hint-btn {
-  width: 32px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   height: 32px;
-  border-radius: 50%;
+  padding: 0 10px 0 8px;
+  border-radius: 16px;
   border: 1px solid rgba(203,161,53,0.28);
   color: #cba135;
   font-family: ui-monospace, monospace;
-  font-size: 16px;
+  transition: all 0.2s;
+  animation: hint-btn-glow 2.4s ease-in-out infinite;
+}
+
+.hint-btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1;
-  transition: all 0.2s;
+}
+
+.hint-btn-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .hint-btn:hover:not(:disabled) {
@@ -364,6 +388,23 @@ defineExpose({ showRevealPhase, resetRound });
 .hint-btn-used {
   cursor: default;
   opacity: 0.35;
+  animation: none;
+}
+
+.hint-btn-static {
+  animation: none;
+  box-shadow: none;
+}
+
+@keyframes hint-btn-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(203,161,53,0);
+    border-color: rgba(203,161,53,0.28);
+  }
+  50% {
+    box-shadow: 0 0 10px 2px rgba(203,161,53,0.6), 0 0 18px 5px rgba(203,161,53,0.25);
+    border-color: rgba(203,161,53,0.85);
+  }
 }
 
 /* ──────────────────────────────────────────────
